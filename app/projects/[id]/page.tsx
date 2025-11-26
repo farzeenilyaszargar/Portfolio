@@ -46,7 +46,7 @@ export default async function ProjectPage({ params, }: { params: Promise<{ id: s
     return (
         <div className='flex flex-col items-center justify-between min-h-screen m-0 p-0 bg-background text-text'>
             <Header />
-            <div className="w-2/3 flex flex-col justify-center items-center  mt-10">
+            <div className="sm:w-2/3 px-5 flex flex-col justify-center items-center  mt-10">
                 <h1 className="font-black text-4xl mt-5 mb-2">{proj.title}</h1>
                 <p className="text-zinc-500 font-light mb-2">{proj.description}</p>
                 {proj.linkWeb
@@ -59,7 +59,7 @@ export default async function ProjectPage({ params, }: { params: Promise<{ id: s
                         :
                         <></>
                 }
-                <Image src={proj.img} alt={proj.title} width={200} height={100} className="w-3/4 rounded-lg mt-5 border border-border " unoptimized/>
+                <Image src={proj.img} alt={proj.title} width={200} height={100} className="sm:w-3/4 w-screen rounded-lg mt-5 border border-border " unoptimized/>
 
 
 
@@ -77,7 +77,7 @@ export default async function ProjectPage({ params, }: { params: Promise<{ id: s
                     }
                 </div>
 
-                <p className="w-9/10 mt-3 text-justify">{proj.fullInfo}</p>
+                <p className="w-9/10 mt-3 sm:text-justify">{proj.fullInfo}</p>
 
                 {
                     proj.features?.length ? (
@@ -99,7 +99,7 @@ export default async function ProjectPage({ params, }: { params: Promise<{ id: s
                 {
 
                     proj.moreImgs?.map((img, index) => (
-                        <Image key={index+1} src={img} alt={`${proj.title} image ${index + 1}`} width={200} height={100} className="w-3/4 rounded-lg mt-5 border border-black" />
+                        <Image key={index+1} src={img} alt={`${proj.title} image ${index + 1}`} width={200} height={100} className="sm:w-3/4 w-screen rounded-lg mt-5 border border-black" />
                     ))
 
 

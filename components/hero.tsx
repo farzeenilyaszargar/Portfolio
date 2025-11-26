@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function HeroSection()
 {
     return(
-        <div className="rounded flex flex-col mt-7 w-2/3 p-2 ">
+        <div className="rounded flex flex-col mt-7 sm:w-2/3 px-5 py-2 ">
             <div className='flex flex-row justify-between items-top'>
                 <div>
                     <h1 className='font-normal text-3xl'>I&apos;m a</h1>

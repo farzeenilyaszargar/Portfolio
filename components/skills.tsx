@@ -15,16 +15,16 @@ const ICONS: IconDef[] = [
   { title: "Rust", path: siRust.path },
   { title: "MySQL", path: siMysql.path },
   { title: "Figma", path: siFigma.path },
-  { title: "pandas", path: siPandas.path },
+  //{ title: "pandas", path: siPandas.path },
   { title: "Supabase", path: siSupabase.path },
-  { title: "GO", path: siGo.path },
+  //{ title: "GO", path: siGo.path },
   { title: "Typescript", path: siTypescript.path },
-  { title: "Raspberry Pi", path: siRaspberrypi.path },
+  //{ title: "Raspberry Pi", path: siRaspberrypi.path },
   { title: "GraphQL", path: siGraphql.path },
   { title: "CSS", path: siCss.path },
   { title: "Github", path: siGithub.path },
   { title: "PostgresSQL", path: siPostgresql.path },
-  { title: "TensorFlow", path: siTensorflow.path },
+  //{ title: "TensorFlow", path: siTensorflow.path },
   //{ title: "Docker", path: siDocker.path },
   //{ title: "FastAPI", path: siFastapi.path },
   //{title: "Keras", path: siKeras.path},
@@ -62,7 +62,7 @@ export default function Skills()
 
 
     return (
-        <div className="w-2/3 mt-5">
+        <div className="sm:w-2/3 px-5 mt-5">
             <h1 className="text-xl font-bold mb-3">Skills</h1>
             <div className=" mt-3 flex flex-row flex-wrap justify-center overflow-hidden  ">
             {
@@ -73,7 +73,7 @@ export default function Skills()
                                 rounded-2xl mt-2 p-2  hover:invert
                                 `}>
                         <BrandIcon  key={skill.title} {...skill} size={20} />
-                        <p className="ml-2 text-sm">{skill.title}</p>
+                        <p className="ml-2 sm:text-sm text-xs">{skill.title}</p>
                   
                     </div>
                     

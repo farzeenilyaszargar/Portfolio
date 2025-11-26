@@ -22,7 +22,7 @@ export default function Projects() {
     
 
     return (
-        <div className="w-2/3 mt-7 flex flex-col items-center">
+        <div className="sm:w-2/3 w-screen px-5 mt-7 flex flex-col items-center">
             <h1 className="text-xl font-bold mb-3 w-full">Projects</h1>
 
             {/*------------------------------------*/}
@@ -70,9 +70,11 @@ export default function Projects() {
                 </div>
                 
                 <Link href={'/projects'} className='group border border-border z-10 p-2 mt-10 rounded-2xl bg-background text-tet text-center w-1/2 flex flex-row 
-                                                    justify-center items-center mb-10 hover:bg-text hover:text-background absolute top-1/3 left-1/4 shadow-[0_0_20px_rgba(0,0,0,1)]'>
+                                                    justify-center items-center mb-10 hover:bg-text hover:text-background absolute top-1/3 left-1/4 shadow-[0_0_20px_rgba(0,0,0,1)]
+                                                     '>
                     <Image src={'/icons/link.png'} alt={'lol'} width={15} height={15} className='mr-1 w-4 h-4 child group-hover:invert' />
-                    Check Out All My Projects!
+                    <p className='hidden sm:block'>Check Out All My Projects!</p>
+                    <p className='sm:hidden block'>Check Out!</p>
 
                 </Link>
                 <div className="absolute top-0 left-0 h-full w-12 pointer-events-none bg-gradient-to-r from-background to-transparent"></div>

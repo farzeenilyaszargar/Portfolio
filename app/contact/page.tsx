@@ -34,11 +34,11 @@ export default function Home() {
   return (
     <div className='h-screen flex flex-col justify-between items-center bg-background text-text'>
       <Header />
-      <div className=' flex justify-center items-center '>
+      <div className=' flex justify-center items-center w-screen px-5'>
 
-        <div className=' border border-border bg-background text-text flex flex-col p-5  rounded-2xl justify-center items-center'>
+        <div className='  border border-border bg-background text-text flex flex-col p-5  rounded-2xl justify-center items-center'>
           <h1 className='font-black text-2xl mb-2'>contact me</h1>
-          <div className='flex flex-row items-center w-fit  '>
+          <div className='flex sm:flex-row flex-col items-center w-fit  '>
             <p className=' text-right font-bold mr-1'>email:</p>
             <p className=' border-b border-transparent transition-all duration-300 ease-in-out hover:border-text'>farzeenilyaszargar@gmail.com</p>
             <div className="relative inline-block group">
@@ -70,7 +70,7 @@ export default function Home() {
               )}
             </div>
           </div>
-          <div className='flex flex-row items-center w-fit'>
+          <div className='flex sm:flex-row flex-col items-center w-fit'>
             <p className='w-1/5 text-right font-bold mr-2'>phone:</p>
 
             <p className=' border-b border-transparent transition-all duration-300 ease-in-out hover:border-black'>  (<span className="text-xs">🇮🇳</span>+91) 9818960083</p>

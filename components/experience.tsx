@@ -36,7 +36,7 @@ const exp: ExpProps[] = [
 
 export default function Experience() {
     return (
-        <div className="w-2/3 mt-5">
+        <div className="sm:w-2/3 mt-5  px-5">
             <h1 className="text-xl font-bold mb-3">Experience</h1>
             <div className="">
                 {exp.map((experience) => (
