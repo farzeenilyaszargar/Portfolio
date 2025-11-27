@@ -18,7 +18,7 @@ const exp: ExpProps[] = [
     
      {
         name: "Superflights",
-        desc: "Cofounded out of college to make a site for people to share their flights and travel experiences. It is a OTA for travelers.",
+        desc: "Cofounded out of college to make a site by optimized flight search using multi-airline fare analysis and dynamic routing to deliver the lowest possible prices often cheaper than major OTAs. We had ₹25,00,000 in GBR (Gross Booking Revenue).",
         time: "2025-Present",
         link: "https://www.superflights.co.in/",
         role: "COO & Co-founder",
@@ -26,7 +26,7 @@ const exp: ExpProps[] = [
     },
      {
         name: "VIT, Vellore",
-        desc: "Studied Computer Science with a specialization in IoT",
+        desc: "Studied Computer Science with a specialization in IoT.",
         time: "2023-2027",
         role: "Student",
         logo: "/icons/vit.png"
