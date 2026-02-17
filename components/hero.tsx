@@ -19,10 +19,14 @@ export default function HeroSection()
                         <p>Delhi, India</p>
                     </div>
                      </div>
-                <div className='flex flex-row'>
+                <div className='flex flex-row justify-center items-center'>
+                    <Link href="https://x.com/farzeenilya">
+                        <Image src={'/icons/twitter.svg'} alt='linkedin' className='w-9 h-9 hover:scale-110 invert-[var(--my-invert)]' width={25} height={25} />
+                    </Link>
                     <Link href="https://github.com/farzeenilyaszargar">
                         <Image src={'/icons/github.svg'} alt='github' className={`w-10 h-10  hover:scale-110  invert-[var(--my-invert)]`} width={25} height={25} />
                     </Link>
+                    
                     <Link href="https://www.linkedin.com/in/farzeenilyaszargar/">
                         <Image src={'/icons/linkedin.svg'} alt='linkedin' className='w-10 h-10 hover:scale-110 invert-[var(--my-invert)]' width={25} height={25} />
                     </Link>
