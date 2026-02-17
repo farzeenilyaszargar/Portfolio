@@ -53,12 +53,7 @@ export default async function ProjectPage({ params, }: { params: Promise<{ id: s
                     ? <Link href={proj.linkWeb} className="border rounded-xl pl-2 pr-2 bg-background text-text transition-all duration-100 ease-in hover:invert">Check Out Here!</Link>
                     : <></>}
 
-                {
-                    proj.users ?
-                        <li className="border rounded-full mt-3 pl-2 pr-2 text-green-500">Users: {proj.users}</li>
-                        :
-                        <></>
-                }
+               
                 <Image src={proj.img} alt={proj.title} width={200} height={100} className="sm:w-3/4 w-screen rounded-lg mt-5 border border-border " unoptimized/>
 
 

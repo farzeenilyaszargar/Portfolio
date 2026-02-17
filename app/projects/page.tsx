@@ -73,7 +73,7 @@ export default function ProjectPage() {
           <div className="flex flex-col gap-5">
             {
               rightItems.map((proj: ProjProps) => (
-                <Link key={proj.id} href={`/projects/${proj.id}`} className="border border-border rounded-2xl overflow-hidden">
+                <Link key={proj.id} href={`/projects/${proj.id}`} className="border border-border rounded-2xl overflow-hidden gap-2">
                   <div className="relative ">
                     <Image src={proj.img} alt={proj.title} width={200} height={100} className="min-w-full " unoptimized/>
                     <div className="absolute bottom-0 left-0 w-full h-10"></div>

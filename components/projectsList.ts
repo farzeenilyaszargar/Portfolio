@@ -7,7 +7,6 @@ export interface ProjProps {
     webAvail:boolean;
     img: string;
     skills: string[];
-    users?: number;
     fullInfo?:string;
     features?: string[];
     moreImgs?: string[];
@@ -33,7 +32,28 @@ export const projects: ProjProps[] = [
         linkWeb: "https://www.lunoirwear.com/",
         img: "/imgs/lunoir.gif",
         skills: ["Next.js", "TailwindCSS", "TypeScript"],
-        users: 98,
+        webAvail:true,
+
+    },
+    {
+        id: 'lightpost',
+
+        title: "LightPost",
+        description: "an ai powered news feed",
+        linkWeb: "https://github.com/farzeenilyaszargar/lightpost-final",
+        img: "/imgs/lightpost.png",
+        skills: ["Next.js", "TailwindCSS", "TypeScript"],
+        webAvail:true,
+
+    },
+    {
+        id: 'gameoflife',
+
+        title: "Game Of Life",
+        description: "Conway's Game of Life Cellular Automata",
+        linkWeb: "https://github.com/farzeenilyaszargar/GameOfLife",
+        img: "/imgs/goll.gif",
+        skills: ["C++"],
         webAvail:true,
 
     },
@@ -116,7 +136,7 @@ export const projects: ProjProps[] = [
         img: "/imgs/ascii.gif",
         skills: ["HTML", "CSS", "JavaScript", "Python"],
         webAvail:true,
-        linkWeb: "https://www.lunoirwear.com/",
+        linkWeb: "",
 
         
     },
