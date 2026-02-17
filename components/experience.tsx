@@ -50,7 +50,7 @@ export default function Experience() {
                         </div>
                         {
                             experience.link ? (
-                            <Link href={experience.link} className="bg-background text-text p-1 rounded-2xl border border-border 
+                            <Link href={experience.link} target="_blank" className="bg-background text-text p-1 rounded-2xl border border-border 
                                                                     flex flex-row items-center justify-center m-1 
                                                                     hover:filter hover:invert overflow-hidden  md:w-27 w-15 h-10 text-nowrap">
                                 <Image src={LinkIcon} alt={experience.name} width={15} height={15} className='mr-1 w-3 h-3 mt-0.5 invert-[var(--my-invert)]'/>
