@@ -15,7 +15,7 @@ interface ExpProps {
 const exp: ExpProps[] = [
    
     {
-        name: "Nap AI",
+        name: "Nap",
         desc: "An agent that writes your code for you and does everything from github pushes to deployments. Selected for pre-incubation in college.",
         time: "2026-Present",
         link: "https://nap-ide.vercel.app/",
