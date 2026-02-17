@@ -9,5 +9,5 @@ to do:
 - [ ] update resume
 - [ ] make blogs page (maybe)
 - [X] add twitter social icon
-- [ ] add nap in experince
+- [X] add nap in experience
 

@@ -14,12 +14,20 @@ interface ExpProps {
 
 const exp: ExpProps[] = [
    
-   
+    {
+        name: "Nap AI",
+        desc: "An agent that writes your code for you and does everything from github pushes to deployments. Selected for pre-incubation in college.",
+        time: "2026-Present",
+        link: "https://nap-ide.vercel.app/",
+        role: "Co-founder & Backend Dev",
+        logo: "/icons/nap.png"
+
+    },
     
      {
         name: "Superflights",
         desc: "Cofounded out of college to make a site by optimized flight search using multi-airline fare analysis and dynamic routing to deliver the lowest possible prices often cheaper than major OTAs. We had ₹25,00,000 in GBR (Gross Booking Revenue).",
-        time: "2025-Present",
+        time: "2025-2026",
         link: "https://www.superflights.co.in/",
         role: "COO & Co-founder",
         logo: "/icons/SuperflightsLogo.jpeg"
