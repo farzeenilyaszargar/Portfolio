@@ -108,7 +108,7 @@ export default function Header() {
                 <Link href="/" className="block py-2 text-2xl">portfolio</Link>
                 <Link href="/projects" className="block py-2 text-2xl">projects</Link>
                 <Link href="/contact" className="block py-2 text-2xl">contact</Link>
-                <Link href="/resume.pdf" className="block py-2 text-2xl">resume</Link>
+                <Link href="/resume.pdf" target="_blank" className="block py-2 text-2xl">resume</Link>
 
 
             </div>

@@ -34,7 +34,7 @@ const exp: ExpProps[] = [
     },
      {
         name: "VIT, Vellore",
-        desc: "Studied Computer Science with a specialization in IoT.",
+        desc: "studied computer science with a specialization in IoT.",
         time: "2023-2027",
         role: "Student",
         logo: "/icons/vit.png"
