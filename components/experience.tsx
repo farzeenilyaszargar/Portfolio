@@ -16,8 +16,8 @@ const exp: ExpProps[] = [
    
     {
         name: "Nap",
-        desc: "An agent that writes your code for you and does everything from github pushes to deployments. Selected for pre-incubation in college.",
-        time: "2026-Present",
+        desc: "an agent that writes your code for you and does everything from github pushes to deployments..",
+        time: "Jan 2026-Present",
         link: "https://nap-ide.vercel.app/",
         role: "Co-founder & Backend Dev",
         logo: "/icons/nap.png"
@@ -26,8 +26,8 @@ const exp: ExpProps[] = [
     
      {
         name: "Superflights",
-        desc: "Cofounded out of college to make a site by optimized flight search using multi-airline fare analysis and dynamic routing to deliver the lowest possible prices often cheaper than major OTAs. We had ₹25,00,000 in GBR (Gross Booking Revenue).",
-        time: "2025-2026",
+        desc: "co-founded out of college. We had ₹25,00,000 in GBR (Gross Booking Revenue).",
+        time: "June 2025 - Dec 2025",
         link: "https://www.superflights.co.in/",
         role: "COO & Co-founder",
         logo: "/icons/SuperflightsLogo.jpeg"

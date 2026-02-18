@@ -10,4 +10,5 @@ to do:
 - [ ] make blogs page (maybe)
 - [X] add twitter social icon
 - [X] add nap in experience
+- [ ] make seo and social media viewability
 
