@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Farzeen's Portfolio",
-    description: "checkout my portfolio",
+    description: "check out my portfolio",
     url: "https://farzeenilyaszargar.vercel.app", 
     siteName: "Farzeen's Portfolio",
     images: [
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Farzeen's Portfolio",
     description: "check out my portfolio",
-    images: ["/portfolio-og-image.png"], 
+    images: ["https://farzeenilyaszargar.vercel.app/portfolio-og-image.png"], 
     creator: "@farzeenilya", 
   },
   robots: {
