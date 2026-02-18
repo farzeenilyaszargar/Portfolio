@@ -20,6 +20,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://farzeenilyaszargar.vercel.app"),
   title: "Farzeen Portfolio",
   description: "Explore the portfolio of Farzeen Ilyas Zargar, a passionate developer showcasing innovative projects, skills, and professional experience.",
   keywords: ["Farzeen Ilyas Zargar", "portfolio", "developer", "web development", "projects", "skills"],
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Farzeen's Portfolio",
     description: "check out my portfolio",
-    images: ["https://farzeenilyaszargar.vercel.app/portfolio-og-image.png"], 
+    images: ["/portfolio-og-image.png"], 
     creator: "@farzeenilya", 
   },
   robots: {
