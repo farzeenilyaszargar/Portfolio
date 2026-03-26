@@ -86,7 +86,7 @@ export const projects: ProjProps[] = [
         id: 'music-player',
         title: "Calypso Music AI",
         description: "i made this AI to distinguish music based on actual musical values and not predective values of the user.",
-        img: "/imgs/calypso.gif",
+        img: "/imgs/calypso.jpg",
         webAvail:false,
 
         skills: ["Rust"],

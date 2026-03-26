@@ -1,5 +1,12 @@
+import { Instrument_Serif } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+
+const instrumentSerif = Instrument_Serif({
+    subsets: ["latin"],
+    weight: ["400"],
+    style: ["normal", "italic"]
+});
 
 interface ExpProps {
     name: string;
@@ -43,23 +50,18 @@ const exp: ExpProps[] = [
 export default function Experience() {
     return (
         <div className="w-screen flex flex-col items-start px-20">
-                <h1 className="text-2xl font-bold mb-5">Experience</h1>
+                <h1 className={`text-3xl font-bold mb-5 text-stroke-1 ${instrumentSerif.className}`}>Experience</h1>
             {
                 exp.map((e, i) => (
-                    <div className="flex flex-row items-center border p-2 px-5 rounded-xl mb-5 w-full">
+                    <div className="flex flex-row items-center border p-2 px-5 rounded-xl mb-5 w-full" key={i}>
                         <img src={e.logo} alt={e.name} className="w-10 h-10 mr-5 rounded-full" />
                         <div className="flex flex-col w-full">
-                            <div className="flex flex-row justify-between items-center">
-                                <h2 className="text-lg font-bold">{e.name}</h2>
-                                <p className="text-sm text-gray-500">{e.time}</p>
-
-                            </div>
-
-                            <p className="text-sm font-semibold">{e.role}</p>
-                            <p className="text-sm">{e.desc}</p>
+                            <h2 className="text-lg font-bold">{e.name} <span className="text-xs text-gray-500 font-normal">({e.time})</span></h2>
+                            <p className="text-xs text-gray-500">{e.role}</p>
+                            <p className="text-sm text-gray-800">{e.desc}</p>
                         </div>
                         {e.link ?(
-                            <Link href={e.link} target="_blank" className="flex flex-row items-center gap-1 border bg-white hover:invert px-2 mx-5 rounded-sm">
+                            <Link href={e.link} target="_blank" className="flex flex-row items-center gap-1 border bg-white hover:invert px-3 py-0.5 mx-5 rounded-full">
                                 <Image src="/icons/link.png" alt="External Link" width={16} height={16} className="w-3 h-3" />
                                 <p className="pr-2">Visit</p>
                             </Link>

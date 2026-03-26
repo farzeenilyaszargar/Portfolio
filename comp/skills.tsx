@@ -1,7 +1,14 @@
-
 import React from "react";
 import { siJavascript, siReact, siNextdotjs, siTailwindcss, siC, siPython, siRust, siMysql, siFigma, siPandas, siSupabase, siGo, 
       siTypescript, siRaspberrypi, siGraphql, siGithub, siCss, siPostgresql, siTensorflow, siDocker, siFastapi, siKeras } from "simple-icons/icons";
+
+import { Instrument_Serif } from "next/font/google";
+
+const instrumentSerif = Instrument_Serif({
+    subsets: ["latin"],
+    weight: ["400"],
+    style: ["normal", "italic"]
+});
 
 type IconDef = { title: string; path: string };
 
@@ -63,7 +70,7 @@ export default function Skills()
 
     return (
         <div className="w-screen flex flex-col items-left px-20 ">
-            <h1 className="text-2xl font-bold mb-4">Skills</h1>
+            <h1 className={`text-3xl font-bold mb-4 text-stroke-1 ${instrumentSerif.className}`}>Skills</h1>
             <div className=" mt-3 flex flex-row flex-wrap justify-center overflow-hidden  ">
             {
             

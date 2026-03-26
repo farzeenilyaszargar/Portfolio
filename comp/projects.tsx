@@ -1,31 +1,57 @@
 import { projects } from "@/data/projects";
-import Link from "next/dist/client/link";
-import Image from "next/image";
+import Link from "next/link";
+import { Instrument_Serif } from "next/font/google";
 
-export default function Projects()
-{
+const instrumentSerif = Instrument_Serif({
+    subsets: ["latin"],
+    weight: ["400"],
+    style: ["normal", "italic"],
+});
+
+const heightClasses = [
+    "h-56 sm:h-64 md:h-72",
+    "h-72 sm:h-80 md:h-96",
+    "h-64 sm:h-72 md:h-80",
+    "h-80 sm:h-96 md:h-[28rem]",
+    "h-60 sm:h-72 md:h-[22rem]",
+    "h-72 sm:h-[22rem] md:h-[30rem]",
+];
+
+export default function Projects() {
     return (
-        <div className="w-screen px-20 ">
-            <h1 className="text-2xl font-bold mb-4">Projects</h1>
-            
-            {
-                projects.map((e, i) => (
-                    <div key={e.id} className="flex flex-col border p-5 rounded-xl mb-5">
-                        <div className="flex flex-row items-center mb-3">
-                            <Image src={e.img} alt={e.title} className="w-10 h-10 mr-5 rounded-full" />
-                            <h2 className="text-lg font-bold">{e.title}</h2>
-                        </div>
-                        <p className="text-sm">{e.description}</p>
-                        {e.linkWeb && (
-                        <Link href={e.linkWeb} target="_blank" className="flex flex-row items-center gap-1 border bg-white hover:invert px-2 mx-5 rounded-sm mt-3">
-                            <Image src="/icons/link.png" alt="External Link" width={16} height={16} className="w-3 h-3" />
-                            <p className="pr-2">Visit</p>
-                        </Link>
-                        )}
-                    </div>
-                ))
-            }
+        <div className="w-screen px-20 my-10">
+            <h1 className={`text-3xl font-bold mb-6 text-stroke-1 ${instrumentSerif.className}`}>
+                Projects
+            </h1>
 
+            <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
+                {projects.map((project, index) => (
+                    <div key={project.id} className="mb-6 break-inside-avoid">
+                        <Link
+                            href={`/projects/${project.id}`}
+                            className="group relative block overflow-hidden rounded-2xl"
+                            aria-label={project.title}
+                        >
+                            <div className={`relative w-full ${heightClasses[index % heightClasses.length]}`}>
+                                <img
+                                    src={project.img}
+                                    alt={project.title}
+                                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    loading="lazy"
+                                />
+                                <div className="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                                <div className="absolute bottom-0 left-0 right-0 p-4">
+                                    <p
+                                        className={`text-xl font-semibold text-white opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 ${instrumentSerif.className}`}
+                                    >
+                                        {project.title}
+                                    </p>
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
