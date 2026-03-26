@@ -17,7 +17,7 @@ export const projects: ProjProps[] = [
         id: 'race',
         title: "Algo Race",
         description: "race between different algotithms visualized for better understanding! ",
-        img: "/imgs/algos.gif",
+        img: "/imgs/algo.gif",
         skills: ["C/C++", "GraphQL", "DSA Concepts"],
         webAvail:false,
         fullInfo: "Algo Race visualizes algorithms side by side so you can see how they behave on the same input. It focuses on clarity and intuition, showing step-by-step progression, timing differences, and how data structures evolve during execution. The interface highlights swaps, comparisons, and state changes in real time, making it easier to understand why certain algorithms outperform others on specific inputs. It is built to be interactive, so you can tweak input sizes, shuffle patterns, and watch the execution paths diverge.",
@@ -52,7 +52,7 @@ export const projects: ProjProps[] = [
         title: "Game Of Life",
         description: "Conway's Game of Life Cellular Automata",
         linkWeb: "https://github.com/farzeenilyaszargar/GameOfLife",
-        img: "/imgs/goll.gif",
+        img: "/imgs/gol.gif",
         skills: ["C++"],
         webAvail:true,
         fullInfo: "A visual implementation of Conway's Game of Life with emphasis on performance and clarity. It supports configurable grid sizes, simulation speed control, and interactive patterns. The project highlights how simple rules can generate complex emergent behavior.",
@@ -98,7 +98,7 @@ export const projects: ProjProps[] = [
 
         title: "Security System Using Raspberry Pi",
         description: "integrating sensors, camera and microprocessor to make a functioning security system.",
-        img: "/imgs/raspberry.webp",
+        img: "/imgs/security.jpg",
         webAvail:false,
 
         skills: ["Python"],
@@ -120,16 +120,7 @@ export const projects: ProjProps[] = [
     },
 
     
-    {
-        id: 'sudoku-solver',
-        title: "Sudoku Solver Algorithm",
-        description: "solves sudoku with multiple algotithms",
-        img: "/imgs/sudoku.gif",
-        skills: ["Next.js", "TailwindCSS"],
-        webAvail:false,
-        fullInfo:"This project delivers a fast, reliable Sudoku solver and generator with clean interfaces and strong correctness guarantees. At its core is a hybrid solving engine: constraint propagation (naked/hidden singles, candidate elimination by units, pairs/triples) to shrink the search space, followed by depth-first backtracking with heuristics (MRV/least-remaining-values and forward checking). For advanced performance, an optional exact-cover backend (Algorithm X with Dancing Links) can be toggled for benchmarking or very hard puzzles. The solver validates inputs (no duplicates per row/column/box), detects unsatisfiable boards, and verifies uniqueness of solutions. A generator builds fresh puzzles by carving from complete grids and testing uniqueness, with difficulty estimated from the sequence of techniques required. The project ships with a CLI for batch solving/generation, a minimal web UI for interactive play and hints, and a test suite covering canonical edge cases. Clear module boundaries make it easy to embed the engine in other apps (mobile, desktop, or web workers). Documentation includes an API guide, technique glossary, and performance notes. The goal is a solver that is both fast for power users and approachable for learners.",
-        
-    },
+    
 
     {
         id: 'img-ascii',
@@ -149,7 +140,7 @@ export const projects: ProjProps[] = [
         title: "Superflights",
         description: "a full-stack travel booking platform with fast search, itinerary management, and checkout flows.",
         linkWeb: "https://www.superflights.co.in/",
-        img: "https://images.unsplash.com/photo-1473625247510-8ceb1760943f?auto=format&fit=crop&w=1200&q=80",
+        img: "/imgs/superflights.jpeg",
         skills: ["Next.js", "TypeScript", "Payments"],
         webAvail:true,
         fullInfo: "Superflights is an OTA-style travel platform that focuses on speed, pricing clarity, and a clean booking experience. I built the core web product with a search flow that surfaces flights and fares quickly, then guides users through flexible filters, itinerary building, and checkout. The system emphasizes reliable pricing, responsive UX, and scalable APIs so the product remains fast even under heavy usage.",
@@ -158,26 +149,18 @@ export const projects: ProjProps[] = [
         id: 'surfers',
         title: "Surfers",
         description: "an AI-first site builder that turns prompts into live, editable pages with quick publishing.",
-        img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+        img: "/imgs/surfers.png",
         skills: ["AI", "React", "Node.js"],
         webAvail:false,
         fullInfo: "Surfers is a prompt-to-website builder that generates a clean starting point and keeps everything editable. It balances fast generation with sensible defaults for typography, layout, and sections, then provides a simple editor for refining content and styles. The focus is on speed to first publish and making changes without friction.",
     },
-    {
-        id: 'java-todo',
-        title: "Java To-Do App",
-        description: "a clean desktop to-do manager with priorities, reminders, and local persistence.",
-        img: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=1200&q=80",
-        skills: ["Java", "SQLite", "Desktop"],
-        webAvail:false,
-        fullInfo: "A lightweight desktop to-do app built in Java with an emphasis on speed and clarity. It supports task priorities, due dates, and reminders, and stores everything locally for fast access. The UI is minimal and optimized for quick entry and review.",
-    },
+    
     {
         id: 'nap',
         title: "Nap",
         description: "an agent orchestration platform for coordinating tools, tasks, and multi-step workflows.",
         linkWeb: "https://nap-code.com/",
-        img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+        img: "/imgs/nap.png",
         skills: ["TypeScript", "APIs", "Infrastructure"],
         webAvail:true,
         fullInfo: "Nap is an orchestration layer for tool-using agents, designed to break down work into reliable, repeatable steps. It manages task routing, tool calls, and state so complex workflows remain observable and controllable. The platform is built to scale with new tools, models, and execution environments.",

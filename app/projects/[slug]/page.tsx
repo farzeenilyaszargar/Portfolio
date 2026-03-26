@@ -91,7 +91,7 @@ export default async function ProjectPage({
               <img
                 src={src}
                 alt={`${project.title} preview ${index + 1}`}
-                className="h-full w-full object-cover"
+                className="h-auto w-full"
                 loading="lazy"
               />
             </div>
