@@ -56,7 +56,7 @@ export default function Experience() {
                     <div className="flex flex-row items-center border p-2 px-5 rounded-xl mb-5 w-full" key={i}>
                         <img src={e.logo} alt={e.name} className="w-10 h-10 mr-5 rounded-full" />
                         <div className="flex flex-col w-full">
-                            <h2 className="text-lg font-bold">{e.name} <span className="text-xs text-gray-500 font-normal">({e.time})</span></h2>
+                            <h2 className={`text-lg font-bold  `}><span className={`text-stroke-1 ${instrumentSerif.className}`}>{e.name}</span> <span className="text-xs text-gray-500 font-normal">({e.time})</span></h2>
                             <p className="text-xs text-gray-500">{e.role}</p>
                             <p className="text-sm text-gray-800">{e.desc}</p>
                         </div>
