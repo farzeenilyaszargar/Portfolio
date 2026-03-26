@@ -15,19 +15,19 @@ const ICONS: IconDef[] = [
   { title: "Rust", path: siRust.path },
   { title: "MySQL", path: siMysql.path },
   { title: "Figma", path: siFigma.path },
-  //{ title: "pandas", path: siPandas.path },
+  { title: "pandas", path: siPandas.path },
   { title: "Supabase", path: siSupabase.path },
-  //{ title: "GO", path: siGo.path },
+  { title: "GO", path: siGo.path },
   { title: "Typescript", path: siTypescript.path },
-  //{ title: "Raspberry Pi", path: siRaspberrypi.path },
+  { title: "Raspberry Pi", path: siRaspberrypi.path },
   { title: "GraphQL", path: siGraphql.path },
   { title: "CSS", path: siCss.path },
   { title: "Github", path: siGithub.path },
   { title: "PostgresSQL", path: siPostgresql.path },
-  //{ title: "TensorFlow", path: siTensorflow.path },
-  //{ title: "Docker", path: siDocker.path },
-  //{ title: "FastAPI", path: siFastapi.path },
-  //{title: "Keras", path: siKeras.path},
+  { title: "TensorFlow", path: siTensorflow.path },
+  { title: "Docker", path: siDocker.path },
+  { title: "FastAPI", path: siFastapi.path },
+  {title: "Keras", path: siKeras.path},
 
 ];
 
@@ -62,14 +62,14 @@ export default function Skills()
 
 
     return (
-        <div className="px-20 w-screen flex flex-col items-center ">
+        <div className="w-screen flex flex-col items-left px-20 ">
             <h1 className="text-2xl font-bold mb-4">Skills</h1>
             <div className=" mt-3 flex flex-row flex-wrap justify-center overflow-hidden  ">
             {
             
                 ICONS.map((skill, id) => (
                     <div key={id} 
-                    className={`flex flex-row items-center w-fit min-w-fit ml-1 mr-1 border border-border text-text bg-background
+                    className={`flex flex-row items-center w-fit min-w-fit ml-1 mr-1 border border-border bg-white
                                 rounded-2xl mt-2 p-2  hover:invert
                                 `}>
                         <BrandIcon  key={skill.title} {...skill} size={20} />
