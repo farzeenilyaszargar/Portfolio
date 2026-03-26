@@ -46,7 +46,7 @@ export default function ProjectPage() {
     <div className="flex flex-col items-center bg-background text-text  ">
       <Header />
       <div className="w-screen flex flex-col justify-center items-center mt-10">
-        <h1 className="font-black text-2xl mb-10">projects</h1>
+        <h1 className="text-3xl font-bold mb-10">projects</h1>
         <div className="sm:w-2/3 grid px-5 md:grid-cols-2 grid-cols-1 gap-5">
           <div className="flex flex-col gap-5">
             {
@@ -56,12 +56,12 @@ export default function ProjectPage() {
                     <Image src={proj.img} alt={proj.title} width={200} height={100} className="min-w-full" />
                     <div className="absolute bottom-0 left-0 w-full h-10 "></div>
                   </div>
-                  <p className="font-bold text-xl text-center m-1">{proj.title}</p>
-                  <p className="text-zinc-400 pl-5 pr-5 mb-2 text-justify">{proj.description}</p>
+                  <p className="font-semibold text-lg text-center m-1">{proj.title}</p>
+                  <p className="text-sm text-zinc-400 pl-5 pr-5 mb-2 text-justify">{proj.description}</p>
                   <div className="flex flex-row w-full justify-center items-center flex-wrap">
                     {
                       proj.skills.map((skill) => (
-                        <p key={skill} className={`border rounded-xl pl-2 pr-2 bg-background ml-2 mr-2 mb-2 ${getRandomTailwindColor()}`}>{skill}</p>
+                        <p key={skill} className={`border rounded-xl pl-2 pr-2 bg-background ml-2 mr-2 mb-2 text-xs font-semibold ${getRandomTailwindColor()}`}>{skill}</p>
 
                       ))
                     }
@@ -78,12 +78,12 @@ export default function ProjectPage() {
                     <Image src={proj.img} alt={proj.title} width={200} height={100} className="min-w-full " unoptimized/>
                     <div className="absolute bottom-0 left-0 w-full h-10"></div>
                   </div>
-                  <p className="font-bold text-xl text-center m-1">{proj.title}</p>
-                  <p className="text-zinc-400 pl-5 pr-5 mb-2 text-justify">{proj.description}</p>
+                  <p className="font-semibold text-lg text-center m-1">{proj.title}</p>
+                  <p className="text-sm text-zinc-400 pl-5 pr-5 mb-2 text-justify">{proj.description}</p>
                   <div className="flex flex-row w-full justify-center items-center flex-wrap">
                     {
                       proj.skills.map((skill) => (
-                        <p key={skill} className={`border rounded-xl pl-2 pr-2 bg-background ml-2 mr-2 mb-2 ${getRandomTailwindColor()}`}>{skill}</p>
+                        <p key={skill} className={`border rounded-xl pl-2 pr-2 bg-background ml-2 mr-2 mb-2 text-xs font-semibold ${getRandomTailwindColor()}`}>{skill}</p>
 
                       ))
                     }

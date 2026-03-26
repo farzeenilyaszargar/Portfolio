@@ -1,12 +1,12 @@
 
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { IM_Fell_English } from "next/font/google";
+import { Ibarra_Real_Nova } from "next/font/google";
 
-const cursive = IM_Fell_English({
+const cursive = Ibarra_Real_Nova({
   subsets: ["latin"],
   variable: "--font-cursive",
-  weight: "400",
+  weight: ["400", "600", "700"],
   style: "normal",
 });
 
@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://farzeenilyaszargar.vercel.app"),
+  metadataBase: new URL("https://farzeenilyaszargar.online"),
   title: "Farzeen's Portfolio",
   description: "Explore the portfolio of Farzeen Ilyas Zargar, a passionate developer showcasing innovative projects, skills, and professional experience.",
   keywords: ["Farzeen Ilyas Zargar", "portfolio", "developer", "web development", "projects", "skills"],
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Farzeen's Portfolio",
     description: "check out my portfolio",
-    url: "https://farzeenilyaszargar.vercel.app", 
+    url: "https://farzeenilyaszargar.online", 
     siteName: "Farzeen's Portfolio",
     images: [
       {

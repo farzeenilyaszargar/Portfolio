@@ -37,10 +37,10 @@ export default function Home() {
       <div className=' flex justify-center items-center w-screen px-5'>
 
         <div className='  border border-border bg-background text-text flex flex-col p-5  rounded-2xl justify-center items-center'>
-          <h1 className='font-black text-2xl mb-2'>contact me</h1>
+          <h1 className='font-black text-3xl mb-3'>contact me</h1>
           <div className='flex sm:flex-row flex-col items-center w-fit  '>
-            <p className=' text-right font-bold mr-1'>email:</p>
-            <p className=' border-b border-transparent transition-all duration-300 ease-in-out hover:border-text'>farzeenilyaszargar@gmail.com</p>
+            <p className=' text-right font-semibold mr-1'>email:</p>
+            <p className=' text-base border-b border-transparent transition-all duration-300 ease-in-out hover:border-text'>farzeenilyaszargar@gmail.com</p>
             <div className="relative inline-block group">
 
               <button
@@ -71,9 +71,9 @@ export default function Home() {
             </div>
           </div>
           <div className='flex sm:flex-row flex-col items-center w-fit'>
-            <p className='w-1/5 text-right font-bold mr-2'>phone:</p>
+            <p className='w-1/5 text-right font-semibold mr-2'>phone:</p>
 
-            <p className=' border-b border-transparent transition-all duration-300 ease-in-out hover:border-black'>  (<span className="text-xs">🇮🇳</span>+91) 9818960083</p>
+            <p className=' text-base border-b border-transparent transition-all duration-300 ease-in-out hover:border-black'>  (<span className="text-xs">🇮🇳</span>+91) 9818960083</p>
             <div className="relative inline-block group">
 
               <button

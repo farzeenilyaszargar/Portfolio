@@ -48,9 +48,9 @@ export default async function ProjectPage({ params, }: { params: Promise<{ id: s
             <Header />
             <div className="sm:w-2/3 px-5 flex flex-col justify-center items-center  mt-10">
                 <h1 className="font-black text-4xl mt-5 mb-2">{proj.title}</h1>
-                <p className="text-zinc-500 font-light mb-2">{proj.description}</p>
+                <p className="text-base text-zinc-500 font-light mb-3">{proj.description}</p>
                 {proj.linkWeb
-                    ? <Link href={proj.linkWeb} className="border rounded-xl pl-2 pr-2 bg-background text-text transition-all duration-100 ease-in hover:invert">Check Out Here!</Link>
+                    ? <Link href={proj.linkWeb} className="border rounded-xl pl-3 pr-3 py-1 bg-background text-text text-sm font-semibold transition-all duration-100 ease-in hover:invert">Check Out Here!</Link>
                     : <></>}
 
                
@@ -62,22 +62,22 @@ export default async function ProjectPage({ params, }: { params: Promise<{ id: s
 
 
 
-                <div className="flex flex-row mt-5">
+                <div className="flex flex-row flex-wrap mt-5">
 
                     {
                         proj.skills.map((skill) => (
-                            <p key={skill} className={`border rounded-xl pl-2 pr-2 bg-background ml-2 mr-2 ${getRandomTailwindColor()}`}>{skill}</p>
+                            <p key={skill} className={`border rounded-xl pl-2 pr-2 bg-background ml-2 mr-2 text-xs font-semibold ${getRandomTailwindColor()}`}>{skill}</p>
 
                         ))
                     }
                 </div>
 
-                <p className="w-9/10 mt-3 sm:text-justify">{proj.fullInfo}</p>
+                <p className="w-9/10 mt-4 text-base sm:text-justify">{proj.fullInfo}</p>
 
                 {
                     proj.features?.length ? (
                         <div className="mt-5 ">
-                            <h1 className="text-2xl font-bold text-center">FEATURES</h1>
+                            <h1 className="text-xl font-bold text-center">FEATURES</h1>
                             <ul className="list-disc ml-5 mt-3">
                                 {proj.features.map((feature, index) => (
                                     <li key={index} className="text-zinc-500">{feature}</li>

@@ -58,13 +58,13 @@ export default function Header() {
 
     return (
         <div className="flex justify-between items-center h-12 mt-2 border-b border-border --font-mine sm:w-2/3 w-screen">
-            <Link href={'/'} className="sm:text-2xl text-xl font-bold italic line-clamp-1">Farzeen Ilyas Zargar</Link>
+            <Link href={'/'} className="sm:text-2xl text-2xl font-bold italic ">Farzeen Ilyas Zargar</Link>
             {/*-------------------*/}
             {
                 headerItems.map((item: HeaderProps) => {
                     const isActive = isRouteActive(item.href, pathname);
                     return (
-                        <Link key={item.label} href={item.href} className={`hidden md:flex ${isActive ? 'font-black text-shadow-2xs' : 'font-light'}`}>{item.label}</Link>
+                        <Link key={item.label} href={item.href} className={`hidden md:flex text-lg ${isActive ? 'font-bold text-shadow-xs' : 'font-normal'}`}>{item.label}</Link>
                     )
                 }
                 )
@@ -80,9 +80,9 @@ export default function Header() {
                     <Image src="/icons/moon.png" alt="moon" width={25} height={25} className="invert-[var(--my-invert)]"/>
                 )}
             </button>
-            <Link href={'/resume.pdf'} className={`border  items-center p-1 pl-2 pr-3 pb-1 rounded-2xl  hidden md:flex hover:invert bg-text text-background`}>
-                <Image src={"/icons/download.png"} alt="download-icon" className={`w-4 h-4 mr-1 mt-0.5 invert-[var(--reverse-invert)]`} width={25} height={25} />
-                resume
+            <Link href={'/resume.pdf'} className={`border items-center px-2 gap-1 rounded-full hidden md:flex hover:invert bg-text text-background text-lg`}>
+                <p className="pl-1">resume</p>
+                <Image src={"/icons/download.png"} alt="download-icon" className={`w-4 h-4 mt-0.5 mr-1 invert-[var(--reverse-invert)]`} width={25} height={25} />
 
             </Link>
             </div>

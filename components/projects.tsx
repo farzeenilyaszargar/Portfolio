@@ -23,7 +23,7 @@ export default function Projects() {
 
     return (
         <div className="sm:w-2/3 w-screen px-5 flex flex-col items-center">
-            <h1 className="text-xl font-bold mb-3 w-full">Projects</h1>
+            <h1 className="text-2xl font-bold mb-4 w-full">Projects</h1>
 
             {/*------------------------------------*/}
 
@@ -33,13 +33,13 @@ export default function Projects() {
                 <div className='flex flex-row h-full marq gap-5 mr-5 mt-5 mb-5 '>
                     {
                         projects.map((project: ProjProps, index) => (
-                        <Link href={project.webAvail ? `${project.linkWeb}` : `/projects/${project.id}`} key={index} className={`border border-gray-500 rounded-xl p-1 flex flex-col items-center justify-around w-70  text-center`}>
-                            <h2 className="font-black p-1 text-xl ml-3 mr-3 mt-1">{project.title}</h2>
+                        <Link href={project.webAvail ? `${project.linkWeb}` : `/projects/${project.id}`} key={index} className={`border border-gray-500 rounded-xl p-2 flex flex-col items-center justify-around w-70 text-center`}>
+                            <h2 className="font-semibold text-lg p-1 ml-3 mr-3 mt-1">{project.title}</h2>
                             <Image src={project.img} alt={project.title} width={300} height={150} className="object-cover object-center aspect-[2/1] w-full m-1 p-1 rounded-2xl" unoptimized/>
                             <div className="flex flex-row min-w-full items-center justify-center flex-wrap  mb-5">
                                 {
                                     project.skills.map((pSkills, index) => (
-                                        <div key={index} className={`border rounded-2xl p-1 pl-2 pr-2 m-1 text-xs ${getRandomTailwindColor()}`}>{pSkills}</div>
+                                        <div key={index} className={`border rounded-2xl p-1 pl-2 pr-2 m-1 text-xs font-semibold ${getRandomTailwindColor()}`}>{pSkills}</div>
                                     ))
                                 }
                             </div>
@@ -50,13 +50,13 @@ export default function Projects() {
                  <div className='flex flex-row h-full  gap-5 marq mt-5 mb-5 mr-5'>
                     {
                         projects.map((project: ProjProps, index) => (
-                        <Link href={project.webAvail ? `${project.linkWeb}` : `/projects/${project.id}`} key={index} className={`border border-border rounded-xl p-1 flex flex-col items-center justify-around w-70  text-center`}>
-                            <h2 className="font-black p-1 text-xl ml-3 mr-3 mt-1">{project.title}</h2>
+                        <Link href={project.webAvail ? `${project.linkWeb}` : `/projects/${project.id}`} key={index} className={`border border-border rounded-xl p-2 flex flex-col items-center justify-around w-70 text-center`}>
+                            <h2 className="font-semibold text-lg p-1 ml-3 mr-3 mt-1">{project.title}</h2>
                             <Image src={project.img} alt={project.title} width={300} height={150} className="object-cover object-center aspect-[2/1] w-full m-1 p-1 rounded-2xl" unoptimized/>
                             <div className="flex flex-row min-w-full items-center justify-center flex-wrap  mb-5">
                                 {
                                     project.skills.map((pSkills, index) => (
-                                        <div key={index} className={`border rounded-2xl p-1 pl-2 pr-2 m-1 text-xs ${getRandomTailwindColor()}`}>{pSkills}</div>
+                                        <div key={index} className={`border rounded-2xl p-1 pl-2 pr-2 m-1 text-xs font-semibold ${getRandomTailwindColor()}`}>{pSkills}</div>
                                     ))
                                 }
                             </div>
@@ -73,8 +73,8 @@ export default function Projects() {
                                                     justify-center items-center mb-10 hover:bg-text hover:text-background absolute top-1/3 left-1/4 shadow-[0_0_20px_rgba(0,0,0,1)]
                                                      '>
                     <Image src={'/icons/link.png'} alt={'lol'} width={15} height={15} className='mr-1 w-4 h-4 child group-hover:invert' />
-                    <p className='hidden sm:block'>Check Out All My Projects!</p>
-                    <p className='sm:hidden block'>Check Out!</p>
+                    <p className='hidden sm:block text-sm font-semibold'>Check Out All My Projects!</p>
+                    <p className='sm:hidden block text-sm font-semibold'>Check Out!</p>
 
                 </Link>
                 <div className="absolute top-0 left-0 h-full w-12 pointer-events-none bg-gradient-to-r from-background to-transparent"></div>

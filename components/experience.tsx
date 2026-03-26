@@ -45,20 +45,20 @@ const exp: ExpProps[] = [
 export default function Experience() {
     return (
         <div className="sm:w-2/3 px-5">
-            <h1 className="text-xl font-bold mb-3">Experience</h1>
+            <h1 className="text-2xl font-bold mb-4">Experience</h1>
             <div className="">
                 {exp.map((experience) => (
                     <div key={experience.name} className="mb-2 border p-2 rounded-4xl flex flex-row justify-around items-center border-border">
                         <Image src={experience.logo} alt={experience.name} width={40} height={40} className="w-12 h-12 flex items-center border-none justify-center bg-black rounded-full mr-2 ml-2" />
 
                         <div className="pb-2 pt-1 w-3/4">
-                            <p className='font-bold'>{experience.name}<span className='text-xs font-light'> ({experience.time})</span></p>
-                            <p className='text-xs font-bold text-gray-500'> {experience.role}</p>
-                            <p className=' font-normal text-sm hidden md:block text-zinc-500'>{experience.desc}</p>
+                            <p className='font-semibold text-lg'>{experience.name}<span className='text-sm font-normal'> ({experience.time})</span></p>
+                            <p className='text-sm font-semibold text-gray-500'> {experience.role}</p>
+                            <p className='font-normal text-sm hidden md:block text-zinc-500'>{experience.desc}</p>
                         </div>
                         {
                             experience.link ? (
-                            <Link href={experience.link} target="_blank" className="bg-background text-text p-1 rounded-2xl border border-border 
+                            <Link href={experience.link} target="_blank" className="bg-background text-text p-1 rounded-2xl border border-border text-sm font-semibold
                                                                     flex flex-row items-center justify-center m-1 
                                                                     hover:filter hover:invert overflow-hidden  md:w-27 w-15 h-10 text-nowrap">
                                 <Image src={LinkIcon} alt={experience.name} width={15} height={15} className='mr-1 w-3 h-3 mt-0.5 invert-[var(--my-invert)]'/>

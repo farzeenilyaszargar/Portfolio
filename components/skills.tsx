@@ -63,7 +63,7 @@ export default function Skills()
 
     return (
         <div className="sm:w-2/3 px-5">
-            <h1 className="text-xl font-bold mb-3">Skills</h1>
+            <h1 className="text-2xl font-bold mb-4">Skills</h1>
             <div className=" mt-3 flex flex-row flex-wrap justify-center overflow-hidden  ">
             {
             
@@ -73,7 +73,7 @@ export default function Skills()
                                 rounded-2xl mt-2 p-2  hover:invert
                                 `}>
                         <BrandIcon  key={skill.title} {...skill} size={20} />
-                        <p className="ml-2 sm:text-sm text-xs">{skill.title}</p>
+                        <p className="ml-2 text-sm font-semibold">{skill.title}</p>
                   
                     </div>
                     
@@ -90,7 +90,6 @@ export default function Skills()
         
     );
 }
-
 
 
 
