@@ -57,7 +57,7 @@ export default function Header() {
 
 
     return (
-        <div className="flex justify-around items-center h-12 mt-2 border-b border-border --font-mine sm:w-2/3 w-screen">
+        <div className="flex justify-between items-center h-12 mt-2 border-b border-border --font-mine sm:w-2/3 w-screen">
             <Link href={'/'} className="sm:text-2xl text-xl font-bold line-clamp-1">Farzeen Ilyas Zargar</Link>
             {/*-------------------*/}
             {
@@ -71,6 +71,7 @@ export default function Header() {
             }
             {/*-------------------*/}
 
+            <div className="flex gap-5">
 
             <button onClick={toggleDarkMode}>
                 {darkMode ? (
@@ -84,6 +85,7 @@ export default function Header() {
                 resume
 
             </Link>
+            </div>
 
 
 

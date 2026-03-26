@@ -22,7 +22,7 @@ export default function Projects() {
     
 
     return (
-        <div className="sm:w-2/3 w-screen px-5 mt-7 flex flex-col items-center">
+        <div className="sm:w-2/3 w-screen px-5 flex flex-col items-center">
             <h1 className="text-xl font-bold mb-3 w-full">Projects</h1>
 
             {/*------------------------------------*/}

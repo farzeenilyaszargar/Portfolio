@@ -62,7 +62,7 @@ export default function Skills()
 
 
     return (
-        <div className="sm:w-2/3 px-5 mt-5">
+        <div className="sm:w-2/3 px-5">
             <h1 className="text-xl font-bold mb-3">Skills</h1>
             <div className=" mt-3 flex flex-row flex-wrap justify-center overflow-hidden  ">
             {
@@ -90,7 +90,6 @@ export default function Skills()
         
     );
 }
-
 
 
 
