@@ -58,7 +58,7 @@ export default function Header() {
 
     return (
         <div className="flex justify-between items-center h-12 mt-2 border-b border-border --font-mine sm:w-2/3 w-screen">
-            <Link href={'/'} className="sm:text-2xl text-xl font-bold line-clamp-1">Farzeen Ilyas Zargar</Link>
+            <Link href={'/'} className="sm:text-2xl text-xl font-bold italic line-clamp-1">Farzeen Ilyas Zargar</Link>
             {/*-------------------*/}
             {
                 headerItems.map((item: HeaderProps) => {
