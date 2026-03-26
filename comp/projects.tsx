@@ -27,15 +27,19 @@ export default function Projects() {
                                 <img
                                     src={project.img}
                                     alt={project.title}
-                                    className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
+                                    className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02] "
                                     loading="lazy"
                                 />
-                                <div className="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                                <div className="absolute inset-0 bg-black/35 transition-opacity duration-300" />
+                                <div className="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                                 <div className="absolute bottom-0 left-0 right-0 p-4">
                                     <p
-                                        className={`text-2xl text-stroke-1-w font-semibold text-white opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 ${instrumentSerif.className}`}
+                                        className={`text-2xl text-stroke-1-w font-semibold text-white translate-y-3 transition-all duration-300  group-hover:translate-y-0 ${instrumentSerif.className}`}
                                     >
                                         {project.title}
+                                    </p>
+                                    <p className={`text-lg font-semibold text-gray-300 translate-y-2 transition-all duration-300 hidden group-hover:block group-hover:translate-y-0 ${instrumentSerif.className}`}>
+                                        {project.description}
                                     </p>
                                 </div>
                             </div>

@@ -1,3 +1,4 @@
+import Contact from "@/comp/contact";
 import Experience from "@/comp/experience";
 import Footer from "@/comp/footer";
 import Hero from "@/comp/hero";
@@ -14,6 +15,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   );
