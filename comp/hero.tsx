@@ -16,7 +16,7 @@ export default function Hero()
                 <h2 className="text-2xl">I am a</h2>
                 <h2 className={`text-6xl font-bold text-stroke ${instrumentSerif.className}`}>Software Developer</h2>
 
-                <p className="items-center justify-center"><Image src="/icons/location-pin.png" alt="Location" width={20} height={20} className="inline mr-2"/>Delhi, India</p>
+                <p className="items-center justify-center"><Image src="/icons/location-pin.png" alt="Location" width={20} height={20} className="inline mr-2 pb-1"/>Delhi, India</p>
             </div>
             <div className="flex flex-row items-center">
                 <Link href="https://x.com/farzeenilyas" className=" p-2 rounded-full hover:scale-110"><Image src="/icons/twitter.svg" alt="Twitter" width={20} height={20} className="w-10"/></Link>

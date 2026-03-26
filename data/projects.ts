@@ -140,7 +140,7 @@ export const projects: ProjProps[] = [
         title: "Superflights",
         description: "a full-stack travel booking platform with fast search, itinerary management, and checkout flows.",
         linkWeb: "https://www.superflights.co.in/",
-        img: "/imgs/superflights.jpeg",
+        img: "/imgs/superlights.png",
         skills: ["Next.js", "TypeScript", "Payments"],
         webAvail:true,
         fullInfo: "Superflights is an OTA-style travel platform that focuses on speed, pricing clarity, and a clean booking experience. I built the core web product with a search flow that surfaces flights and fares quickly, then guides users through flexible filters, itinerary building, and checkout. The system emphasizes reliable pricing, responsive UX, and scalable APIs so the product remains fast even under heavy usage.",

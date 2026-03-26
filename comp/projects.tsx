@@ -20,7 +20,7 @@ export default function Projects() {
                     <div key={project.id} className="mb-6 break-inside-avoid">
                         <Link
                             href={`/projects/${project.id}`}
-                            className="group relative block overflow-hidden rounded-2xl"
+                            className="group relative block overflow-hidden rounded-2xl border"
                             aria-label={project.title}
                         >
                             <div className="relative w-full">
@@ -33,7 +33,7 @@ export default function Projects() {
                                 <div className="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                                 <div className="absolute bottom-0 left-0 right-0 p-4">
                                     <p
-                                        className={`text-xl font-semibold text-white opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 ${instrumentSerif.className}`}
+                                        className={`text-2xl text-stroke-1-w font-semibold text-white opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 ${instrumentSerif.className}`}
                                     >
                                         {project.title}
                                     </p>
