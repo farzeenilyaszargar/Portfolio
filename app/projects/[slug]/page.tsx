@@ -93,7 +93,7 @@ export default async function ProjectPage({
             ))}
           </div>
           {project.features?.length ? (
-            <div>
+            <div className="lg:col-span-2">
               <p className="text-sm uppercase tracking-widest text-black">Features</p>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                 {project.features.map((feature) => (
