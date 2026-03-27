@@ -70,21 +70,11 @@ export default async function ProjectPage({
               ) : null}
             </div>
 
-            {project.features?.length ? (
-              <div>
-                <p className="text-sm uppercase tracking-widest text-black">Features</p>
-                <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-                  {project.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="rounded-xl border bg-black px-4 py-3 text-sm font-medium text-white shadow-sm"
-                    >
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+            <div>
+              <p className="text-base leading-relaxed project-secondary">
+                {project.fullInfo ?? project.description}
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -102,12 +92,21 @@ export default async function ProjectPage({
               </div>
             ))}
           </div>
-
-          <div>
-            <p className="text-base leading-relaxed project-secondary">
-              {project.fullInfo ?? project.description}
-            </p>
-          </div>
+          {project.features?.length ? (
+            <div>
+              <p className="text-sm uppercase tracking-widest text-black">Features</p>
+              <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+                {project.features.map((feature) => (
+                  <li
+                    key={feature}
+                    className="rounded-xl border bg-black px-4 py-3 text-sm font-medium text-white shadow-sm"
+                  >
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
         </div>
       </div>
     </div>
