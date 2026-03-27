@@ -27,7 +27,7 @@ export default async function ProjectPage({
     notFound();
   }
 
-  const gallery = [project.img, ...(project.moreImgs ?? [])];
+  const gallery = [project.img];
 
   return (
     <div className="min-h-screen w-full">
@@ -70,7 +70,7 @@ export default async function ProjectPage({
 
             {project.features?.length ? (
               <div>
-                <p className="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400">Features</p>
+                <p className="text-sm uppercase tracking-widest text-black dark:text-gray-400">Features</p>
                 <ul className="mt-3 list-disc pl-5 text-sm text-black dark:text-gray-300">
                   {project.features.map((feature) => (
                     <li key={feature}>{feature}</li>
