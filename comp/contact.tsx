@@ -27,13 +27,12 @@ export default function Contact() {
 
     return (
         <section className="w-full px-4 sm:px-6 lg:px-20 py-16">
-            <div className="rounded-3xl border bg-white p-6 sm:p-8 lg:p-10 text-black">
                 <h1 className={`text-3xl sm:text-4xl font-bold text-stroke-1 ${instrumentSerif.className}`}>
                     Contact Me
                 </h1>
 
                 <div className="mt-6 sm:mt-8 grid gap-4 md:grid-cols-2">
-                    <div className="flex items-center justify-between rounded-2xl border bg-neutral-50 p-3 sm:p-4">
+                    <div className="flex items-center justify-between rounded-2xl border p-3 sm:p-4">
                         <div className="flex items-center gap-3">
                             <span className="hidden sm:flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white">
                                 <svg
@@ -83,7 +82,7 @@ export default function Contact() {
                         </button>
                     </div>
 
-                    <div className="flex items-center justify-between rounded-2xl border bg-neutral-50 p-3 sm:p-4">
+                    <div className="flex items-center justify-between rounded-2xl border p-3 sm:p-4">
                         <div className="flex items-center gap-3">
                             <span className="hidden sm:flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white">
                                 <svg
@@ -129,7 +128,6 @@ export default function Contact() {
                         </button>
                     </div>
                 </div>
-            </div>
         </section>
     );
 }

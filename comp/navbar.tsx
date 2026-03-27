@@ -43,7 +43,7 @@ export default function Navbar() {
                     <span className="hidden sm:inline">Farzeen Ilyas Zargar</span>
                 </h1>
             </Link>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center sm:gap-3">
                 <button
                     type="button"
                     onClick={toggleTheme}
@@ -63,12 +63,12 @@ export default function Navbar() {
                 </button>
                 <Link
                     href="/resume.pdf"
-                    className={`flex flex-row border px-3 py-0.5 rounded-full justify-center items-center ${
+                    className={`flex flex-row border sm:px-3 px-1 py-0.5 rounded-full justify-center items-center ${
                         isDark ? "bg-white text-black" : "bg-white invert hover:invert-0"
                     }`}
                 >
                     <Image src="/icons/download.png" alt="resume" width={30} height={30} className="h-4 w-auto " />
-                    <p className={`pr-1 ${instrumentSerif.className} text-xl`}>Resume</p>
+                    <p className={`pr-1 ${instrumentSerif.className} text-lg sm:text-xl`}>Resume</p>
                 </Link>
             </div>
         </div>
