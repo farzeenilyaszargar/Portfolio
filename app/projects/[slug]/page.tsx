@@ -96,8 +96,7 @@ export default async function ProjectPage({
           </div>
 
           <div>
-            <p className="text-sm uppercase tracking-widest text-gray-500">Overview</p>
-            <p className="mt-3 text-base leading-relaxed text-gray-800">
+            <p className="text-base leading-relaxed text-gray-800">
               {project.fullInfo ?? project.description}
             </p>
           </div>
