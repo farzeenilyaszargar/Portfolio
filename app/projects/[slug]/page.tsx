@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Instrument_Serif } from "next/font/google";
+import Navbar from "@/comp/navbar";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
 
@@ -29,7 +30,9 @@ export default async function ProjectPage({
   const gallery = [project.img, ...(project.moreImgs ?? [])];
 
   return (
-    <div className="min-h-screen w-full px-4 sm:px-6 lg:px-20 py-16">
+    <div className="min-h-screen w-full">
+      <Navbar />
+      <div className="px-4 sm:px-6 lg:px-20 py-16">
       <Link href="/" className="text-sm uppercase tracking-widest hover:underline">
         Back
       </Link>
