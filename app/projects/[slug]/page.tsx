@@ -53,19 +53,8 @@ export default async function ProjectPage({
               </Link>
             ) : null}
             <p className="mt-3 text-lg text-gray-600">{project.description}</p>
-          </div>
-
-          <div className="rounded-2xl border bg-white p-5">
-            <p className="text-sm uppercase tracking-widest text-gray-500">Overview</p>
-            <p className="mt-3 text-base leading-relaxed text-gray-800">
-              {project.fullInfo ?? project.description}
-            </p>
-          </div>
-
-          {project.skills?.length ? (
-            <div>
-              <p className="text-sm uppercase tracking-widest text-gray-500">Skills</p>
-              <div className="mt-3 flex flex-wrap gap-2">
+            {project.skills?.length ? (
+              <div className="mt-4 flex flex-wrap justify-center gap-2">
                 {project.skills.map((skill) => (
                   <span
                     key={skill}
@@ -75,8 +64,16 @@ export default async function ProjectPage({
                   </span>
                 ))}
               </div>
-            </div>
-          ) : null}
+            ) : null}
+          </div>
+
+          <div className="rounded-2xl border bg-white p-5">
+            <p className="text-sm uppercase tracking-widest text-gray-500">Overview</p>
+            <p className="mt-3 text-base leading-relaxed text-gray-800">
+              {project.fullInfo ?? project.description}
+            </p>
+          </div>
+
 
           {project.features?.length ? (
             <div>
