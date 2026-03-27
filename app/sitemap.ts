@@ -6,18 +6,19 @@ const baseUrl = rawBaseUrl.replace(/\/+$/, "");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
+  const changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] = "monthly";
 
   return [
     {
       url: baseUrl,
       lastModified,
-      changeFrequency: "monthly",
+      changeFrequency,
       priority: 1,
     },
     ...projects.map((project) => ({
       url: `${baseUrl}/projects/${project.id}`,
       lastModified,
-      changeFrequency: "monthly",
+      changeFrequency,
       priority: 0.7,
     })),
   ];
