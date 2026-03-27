@@ -28,18 +28,18 @@ export default function Contact() {
     return (
         <section className="w-full px-4 sm:px-6 lg:px-20 py-16">
             <div className="rounded-3xl border bg-white p-6 sm:p-8 lg:p-10 text-black">
-                <h1 className={`text-4xl font-bold text-stroke-1 ${instrumentSerif.className}`}>
+                <h1 className={`text-3xl sm:text-4xl font-bold text-stroke-1 ${instrumentSerif.className}`}>
                     Contact Me
                 </h1>
 
-                <div className="mt-8 grid gap-4 md:grid-cols-2">
-                    <div className="flex items-center justify-between rounded-2xl border p-4">
+                <div className="mt-6 sm:mt-8 grid gap-4 md:grid-cols-2">
+                    <div className="flex items-center justify-between rounded-2xl border bg-neutral-50 p-3 sm:p-4">
                         <div className="flex items-center gap-3">
-                            <span className="flex h-10 w-10 items-center justify-center rounded-full border">
+                            <span className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white">
                                 <svg
                                     aria-hidden
                                     viewBox="0 0 24 24"
-                                    className="h-5 w-5"
+                                    className="h-4 w-4 sm:h-5 sm:w-5"
                                     fill="none"
                                     stroke="currentColor"
                                     strokeWidth="1.7"
@@ -54,7 +54,7 @@ export default function Contact() {
                                 <p className="text-xs uppercase tracking-widest text-gray-500">Email</p>
                                 <a
                                     href="mailto:farzeenilyaszargar@gmail.com"
-                                    className="text-lg font-semibold hover:underline"
+                                    className="text-sm sm:text-lg font-semibold hover:underline"
                                 >
                                     farzeenilyaszargar@gmail.com
                                 </a>
@@ -63,7 +63,7 @@ export default function Contact() {
                         <button
                             type="button"
                             onClick={() => copyText("farzeenilyaszargar@gmail.com")}
-                            className="flex h-10 w-10 items-center justify-center rounded-full border transition hover:scale-[1.03]"
+                            className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white transition hover:scale-[1.03]"
                             aria-label="Copy email"
                             title="Copy email"
                         >
@@ -83,13 +83,13 @@ export default function Contact() {
                         </button>
                     </div>
 
-                    <div className="flex items-center justify-between rounded-2xl border  p-4">
+                    <div className="flex items-center justify-between rounded-2xl border bg-neutral-50 p-3 sm:p-4">
                         <div className="flex items-center gap-3">
-                            <span className="flex h-10 w-10 items-center justify-center rounded-full border ">
+                            <span className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white">
                                 <svg
                                     aria-hidden
                                     viewBox="0 0 24 24"
-                                    className="h-5 w-5"
+                                    className="h-4 w-4 sm:h-5 sm:w-5"
                                     fill="none"
                                     stroke="currentColor"
                                     strokeWidth="1.7"
@@ -101,7 +101,7 @@ export default function Contact() {
                             </span>
                             <div>
                                 <p className="text-xs uppercase tracking-widest text-gray-500">Phone</p>
-                                <a href="tel:9818960083" className="text-lg font-semibold hover:underline">
+                                <a href="tel:9818960083" className="text-sm sm:text-lg font-semibold hover:underline">
                                     +91 98189 60083
                                 </a>
                             </div>
@@ -109,7 +109,7 @@ export default function Contact() {
                         <button
                             type="button"
                             onClick={() => copyText("+91 98189 60083")}
-                            className="flex h-10 w-10 items-center justify-center rounded-full border transition hover:scale-[1.03]"
+                            className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white transition hover:scale-[1.03]"
                             aria-label="Copy phone"
                             title="Copy phone"
                         >

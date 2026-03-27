@@ -38,8 +38,9 @@ export default function Navbar() {
             }`}
         >
             <Link href="/" className="">
-                <h1 className={`${instrumentSerif.className} text-3xl font-bold italic `}>
-                    Farzeen Ilyas Zargar
+                <h1 className={`${instrumentSerif.className} text-2xl sm:text-3xl font-bold italic`}>
+                    <span className="sm:hidden">Farzeen</span>
+                    <span className="hidden sm:inline">Farzeen Ilyas Zargar</span>
                 </h1>
             </Link>
             <div className="flex items-center gap-3">

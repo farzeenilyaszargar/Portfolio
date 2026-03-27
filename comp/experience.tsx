@@ -50,13 +50,13 @@ const exp: ExpProps[] = [
 export default function Experience() {
     return (
         <div className="w-full flex flex-col items-start px-4 sm:px-6 lg:px-20">
-                <h1 className={`text-3xl font-bold mb-5 text-stroke-1 ${instrumentSerif.className}`}>Experience</h1>
+                <h1 className={`text-2xl sm:text-3xl font-bold mb-5 text-stroke-1 ${instrumentSerif.className}`}>Experience</h1>
             {
                 exp.map((e, i) => (
                     <div className={`flex flex-col sm:flex-row sm:items-center gap-4 border p-3 sm:px-5 rounded-xl mb-5 w-full`} key={i}>
                         <img src={e.logo} alt={e.name} className="w-10 h-10 mr-5 rounded-full" />
                         <div className="flex flex-col w-full">
-                            <h2 className={`text-lg font-bold  `}><span className={`text-stroke-1 ${instrumentSerif.className}`}>{e.name}</span> <span className="text-xs text-gray-500 font-normal">({e.time})</span></h2>
+                            <h2 className={`text-base sm:text-lg font-bold  `}><span className={`text-stroke-1 ${instrumentSerif.className}`}>{e.name}</span> <span className="text-xs text-gray-500 font-normal">({e.time})</span></h2>
                             <p className="text-xs text-gray-400">{e.role}</p>
                             <p className="text-sm text-gray-600">{e.desc}</p>
                         </div>

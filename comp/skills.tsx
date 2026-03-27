@@ -70,17 +70,17 @@ export default function Skills()
 
     return (
         <div className="w-full flex flex-col items-left px-4 sm:px-6 lg:px-20 ">
-            <h1 className={`text-3xl font-bold mb-4 text-stroke-1 ${instrumentSerif.className}`}>Skills</h1>
+            <h1 className={`text-2xl sm:text-3xl font-bold mb-4 text-stroke-1 ${instrumentSerif.className}`}>Skills</h1>
             <div className=" mt-3 flex flex-row flex-wrap justify-start overflow-hidden  ">
             {
             
                 ICONS.map((skill, id) => (
                     <div key={id} 
                     className={`flex flex-row items-center w-fit min-w-fit ml-1 mr-1 border border-border bg-white text-black
-                                rounded-2xl mt-2 p-2 hover:invert
+                                rounded-2xl mt-2 p-1.5 sm:p-2 hover:invert
                                 `}>
-                        <BrandIcon  key={skill.title} {...skill} size={20} />
-                        <p className="ml-2 text-sm font-semibold">{skill.title}</p>
+                        <BrandIcon  key={skill.title} {...skill} size={16} />
+                        <p className="ml-2 text-xs sm:text-sm font-semibold">{skill.title}</p>
                   
                     </div>
                     
