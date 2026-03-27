@@ -35,7 +35,7 @@ export default function Contact() {
                 <div className="mt-6 sm:mt-8 grid gap-4 md:grid-cols-2">
                     <div className="flex items-center justify-between rounded-2xl border bg-neutral-50 p-3 sm:p-4">
                         <div className="flex items-center gap-3">
-                            <span className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white">
+                            <span className="hidden sm:flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white">
                                 <svg
                                     aria-hidden
                                     viewBox="0 0 24 24"
@@ -54,7 +54,7 @@ export default function Contact() {
                                 <p className="text-xs uppercase tracking-widest text-gray-500">Email</p>
                                 <a
                                     href="mailto:farzeenilyaszargar@gmail.com"
-                                    className="text-sm sm:text-lg font-semibold hover:underline"
+                                    className="text-xs sm:text-lg font-semibold hover:underline"
                                 >
                                     farzeenilyaszargar@gmail.com
                                 </a>
@@ -85,7 +85,7 @@ export default function Contact() {
 
                     <div className="flex items-center justify-between rounded-2xl border bg-neutral-50 p-3 sm:p-4">
                         <div className="flex items-center gap-3">
-                            <span className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white">
+                            <span className="hidden sm:flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white">
                                 <svg
                                     aria-hidden
                                     viewBox="0 0 24 24"
@@ -101,7 +101,7 @@ export default function Contact() {
                             </span>
                             <div>
                                 <p className="text-xs uppercase tracking-widest text-gray-500">Phone</p>
-                                <a href="tel:9818960083" className="text-sm sm:text-lg font-semibold hover:underline">
+                                <a href="tel:9818960083" className="text-xs sm:text-lg font-semibold hover:underline">
                                     +91 98189 60083
                                 </a>
                             </div>
