@@ -42,7 +42,12 @@ export default async function ProjectPage({
           <div className="flex flex-col gap-6">
             <div className="flex flex-col items-center text-center">
               <h1 className={`text-5xl text-stroke-1 ${instrumentSerif.className}`}>{project.title}</h1>
-              <p className="mt-3 text-lg !text-black dark:!text-gray-300">{project.description}</p>
+              <p
+                className="mt-3 text-lg !text-black dark:!text-gray-300"
+                style={{ color: "#000000" }}
+              >
+                {project.description}
+              </p>
               {project.skills?.length ? (
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
                   {project.skills.map((skill) => (
@@ -81,7 +86,10 @@ export default async function ProjectPage({
           </div>
 
           <div>
-            <p className="text-base leading-relaxed !text-black dark:!text-gray-300">
+            <p
+              className="text-base leading-relaxed !text-black dark:!text-gray-300"
+              style={{ color: "#000000" }}
+            >
               {project.fullInfo ?? project.description}
             </p>
           </div>
