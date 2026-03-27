@@ -17,7 +17,7 @@ export const projects: ProjProps[] = [
         description: "Agent orchestration platform for tools, tasks, and workflow automation stack.",
         linkWeb: "https://nap-code.com/",
         img: "/imgs/nap.png",
-        skills: ["TypeScript", "APIs", "Infrastructure"],
+        skills: ["TypeScript", "APIs", "Electron"],
         webAvail:true,
         features: [
             "Multi agent coordination",
@@ -91,7 +91,7 @@ export const projects: ProjProps[] = [
         description: "Interactive Conway simulation with controls and presets for learning now.",
         linkWeb: "https://github.com/farzeenilyaszargar/GameOfLife",
         img: "/imgs/gol.gif",
-        skills: ["C++"],
+        skills: ["C++", "WEBGL", "SDL"],
         webAvail:true,
         features: [
             "Interactive grid editing",
@@ -123,7 +123,7 @@ export const projects: ProjProps[] = [
     {
         id: 'your-time',
 
-        title: "Time Is Yours (Web Extension)",
+        title: "Time Is Yours",
         description: "Browser extension tracking website time and reporting habits daily now.",
         linkWeb: "https://github.com/farzeenilyaszargar/time-is-yours-extension/",
         img: "/imgs/ext.gif",
@@ -148,7 +148,7 @@ export const projects: ProjProps[] = [
         img: "/imgs/calypso.jpg",
         webAvail:false,
 
-        skills: ["Rust"],
+        skills: ["Rust", "Python", "Audio Libs"],
         features: [
             "Audio feature extraction",
             "Similarity based playlists",
@@ -166,7 +166,7 @@ export const projects: ProjProps[] = [
         description: "Fast travel booking platform with search, filters, and checkout now.",
         linkWeb: "https://www.superflights.co.in/",
         img: "/imgs/superlights.png",
-        skills: ["Next.js", "TypeScript", "Payments"],
+        skills: ["Next.js", "TypeScript", "APIs"],
         webAvail:true,
         features: [
             "Fast search and filters",
@@ -186,7 +186,7 @@ export const projects: ProjProps[] = [
         img: "/imgs/security.jpg",
         webAvail:false,
 
-        skills: ["Python"],
+        skills: ["Python", "Raspberry Pi", "IoT"],
         features: [
             "Motion and sensor triggers",
             "Local recording and alerts",
@@ -204,7 +204,7 @@ export const projects: ProjProps[] = [
         title: "To Do & Timer & Tunes ",
         description: "Minimal focus toolkit combining tasks, timer, and music daily now.",
         img: "/imgs/todo.jpeg",
-        skills: ["NextJS"],
+        skills: ["NextJS", "TailwindCSS", "TypeScript"],
         webAvail:true,
         linkWeb:"https://sip-and-focus-8fbjfc58h-farzeenilyaszargars-projects.vercel.app/",
         features: [

@@ -42,7 +42,7 @@ export default async function ProjectPage({
           <div className="flex flex-col gap-6">
             <div className="flex flex-col items-center text-center">
               <h1 className={`text-5xl text-stroke-1 ${instrumentSerif.className}`}>{project.title}</h1>
-              <p className="mt-3 text-lg project-secondary">
+              <p className="mt-3 text-lg project-secondary italic">
                 {project.description}
               </p>
               {project.skills?.length ? (
@@ -83,7 +83,7 @@ export default async function ProjectPage({
                 {project.features.map((feature) => (
                   <li
                     key={feature}
-                    className="rounded-xl border bg-black px-4 py-3 text-sm font-medium text-white shadow-sm"
+                    className="rounded-xl border  px-4 py-3 text-sm font-medium shadow-md"
                   >
                     {feature}
                   </li>
@@ -95,12 +95,12 @@ export default async function ProjectPage({
             {gallery.map((src, index) => (
               <div
                 key={`${src}-${index}`}
-                className={`mx-auto overflow-hidden rounded-2xl border-2 w-full bg-white ${index === 0 ? "sm:col-span-2" : ""}`}
+                className={`mx-auto overflow-hidden rounded-2xl border-2 lg:w-1/2 w-full bg-white ${index === 0 ? "sm:col-span-2" : ""}`}
               >
                 <img
                   src={src}
                   alt={`${project.title} preview ${index + 1}`}
-                  className="h-auto w-full object-contain border border-border"
+                  className="h-auto w-full object-contain border border-border "
                   loading="lazy"
                 />
               </div>
