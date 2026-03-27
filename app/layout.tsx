@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  keywords: ["Software Developer", "Portfolio", "Projects", "Experience", "Skills", "Farzeen Ilyas Zargar", "Delhi", "India"],
+  keywords: ["Software Developer", "Portfolio", "Projects", "Experience", "Skills", "Farzeen Ilyas Zargar", "Delhi", "India", "Web Development", "Open Source", "Tech Enthusiast"],
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode}>) {
