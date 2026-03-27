@@ -1,11 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Instrument_Serif } from "next/font/google";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
 
 export async function generateStaticParams() {
   return projects.map((project) => ({ slug: project.id }));
 }
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+});
 
 export default async function ProjectPage({
   params,
@@ -30,7 +37,7 @@ export default async function ProjectPage({
       <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[1fr,1.1fr]">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col items-center text-center">
-            <h1 className="text-4xl font-bold">{project.title}</h1>
+            <h1 className={`text-4xl font-bold ${instrumentSerif.className}`}>{project.title}</h1>
             {project.linkWeb ? (
               <Link
                 href={project.linkWeb}
