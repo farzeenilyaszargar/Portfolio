@@ -58,11 +58,11 @@ export default function Experience() {
                         <div className="flex flex-col w-full">
                             <h2 className={`text-lg font-bold  `}><span className={`text-stroke-1 ${instrumentSerif.className}`}>{e.name}</span> <span className="text-xs text-gray-500 font-normal">({e.time})</span></h2>
                             <p className="text-xs text-gray-400">{e.role}</p>
-                            <p className="text-sm text-gray-800">{e.desc}</p>
+                            <p className="text-sm text-gray-600">{e.desc}</p>
                         </div>
                         {e.link ?(
-                            <Link href={e.link} target="_blank" className="flex flex-row items-center gap-1 border bg-white hover:invert px-3 py-0.5 mx-5 rounded-full">
-                                <Image src="/icons/link.png" alt="External Link" width={16} height={16} className="w-3 h-3" />
+                            <Link href={e.link} target="_blank" className="flex flex-row items-center gap-1 border hover:invert px-3 py-0.5 mx-5 bg-white text-black rounded-full">
+                                <Image src="/icons/link.png" alt="External Link" width={16} height={16} className="w-3 h-3 " />
                                 <p className="pr-2">Visit</p>
                             </Link>
                         ):

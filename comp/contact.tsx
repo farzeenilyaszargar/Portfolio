@@ -27,15 +27,15 @@ export default function Contact() {
 
     return (
         <section className="w-screen px-20 py-16">
-            <div className="rounded-3xl border bg-white p-10 text-black">
-                <h1 className={`text-4xl font-bold text-stroke-1-b ${instrumentSerif.className}`}>
+            <div className="rounded-3xl border  p-10">
+                <h1 className={`text-4xl font-bold text-stroke-1 ${instrumentSerif.className}`}>
                     Contact Me
                 </h1>
 
                 <div className="mt-8 grid gap-4 md:grid-cols-2">
                     <div className="flex items-center justify-between rounded-2xl border p-4">
                         <div className="flex items-center gap-3">
-                            <span className="flex h-10 w-10 items-center justify-center rounded-full border bg-white">
+                            <span className="flex h-10 w-10 items-center justify-center rounded-full border">
                                 <svg
                                     aria-hidden
                                     viewBox="0 0 24 24"
@@ -63,7 +63,7 @@ export default function Contact() {
                         <button
                             type="button"
                             onClick={() => copyText("farzeenilyaszargar@gmail.com")}
-                            className="flex h-10 w-10 items-center justify-center rounded-full border bg-white transition hover:scale-[1.03]"
+                            className="flex h-10 w-10 items-center justify-center rounded-full border transition hover:scale-[1.03]"
                             aria-label="Copy email"
                             title="Copy email"
                         >
@@ -85,7 +85,7 @@ export default function Contact() {
 
                     <div className="flex items-center justify-between rounded-2xl border  p-4">
                         <div className="flex items-center gap-3">
-                            <span className="flex h-10 w-10 items-center justify-center rounded-full border bg-white">
+                            <span className="flex h-10 w-10 items-center justify-center rounded-full border ">
                                 <svg
                                     aria-hidden
                                     viewBox="0 0 24 24"
@@ -109,7 +109,7 @@ export default function Contact() {
                         <button
                             type="button"
                             onClick={() => copyText("+91 98189 60083")}
-                            className="flex h-10 w-10 items-center justify-center rounded-full border bg-white transition hover:scale-[1.03]"
+                            className="flex h-10 w-10 items-center justify-center rounded-full border transition hover:scale-[1.03]"
                             aria-label="Copy phone"
                             title="Copy phone"
                         >
