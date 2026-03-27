@@ -29,16 +29,16 @@ export default async function ProjectPage({
 
       <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[1fr,1.1fr]">
         <div className="flex flex-col gap-6">
-          <div>
+          <div className="flex flex-col items-center text-center">
             <h1 className="text-4xl font-bold">{project.title}</h1>
             {project.linkWeb ? (
               <Link
                 href={project.linkWeb}
                 target="_blank"
                 rel="noreferrer"
-                className="theme-invert mt-4 inline-flex items-center gap-2 rounded-full border bg-black px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+                className="theme-invert mt-4 inline-flex items-center justify-center gap-2 rounded-full border bg-black px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
               >
-                <Image src="/icons/link.png" alt="External Link" width={16} height={16} className="h-4 w-4" />
+                <Image src="/icons/link.png" alt="External Link" width={16} height={16} className="h-4 w-4 invert" />
                 Visit Project
               </Link>
             ) : null}
