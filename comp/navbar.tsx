@@ -15,11 +15,13 @@ export default function Navbar() {
     const [isDark, setIsDark] = useState(false);
 
     useEffect(() => {
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const stored = localStorage.getItem("theme");
-        const nextIsDark = stored ? stored === "dark" : prefersDark;
+        const nextIsDark = stored === "dark";
         setIsDark(nextIsDark);
         document.documentElement.classList.toggle("dark", nextIsDark);
+        if (!stored) {
+            localStorage.setItem("theme", "light");
+        }
     }, []);
 
     const toggleTheme = () => {
