@@ -53,3 +53,11 @@ html.dark .text-stroke {
 html.dark .text-stroke-1 {
   -webkit-text-stroke: 1px #ffffff;
 }
+
+.project-secondary {
+  color: #000000 !important;
+}
+
+html.dark .project-secondary {
+  color: #d1d5db !important;
+}
