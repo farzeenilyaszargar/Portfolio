@@ -38,7 +38,7 @@ export default async function ProjectPage({
           Back
         </Link>
 
-        <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[1fr,1.1fr]">
+        <div className="mt-8 flex flex-col gap-10">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col items-center text-center">
               <h1 className={`text-5xl text-stroke-1 ${instrumentSerif.className}`}>{project.title}</h1>
@@ -76,24 +76,8 @@ export default async function ProjectPage({
               </p>
             </div>
           </div>
-
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {gallery.map((src, index) => (
-              <div
-                key={`${src}-${index}`}
-                className={`mx-auto overflow-hidden rounded-2xl border-2 w-full lg:w-1/2 bg-white  ${index === 0 ? "sm:col-span-2" : ""}`}
-              >
-                <img
-                  src={src}
-                  alt={`${project.title} preview ${index + 1}`}
-                  className="h-auto w-full object-contain border border-border"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
           {project.features?.length ? (
-            <div className="lg:col-span-2">
+            <div>
               <p className="text-sm uppercase tracking-widest text-black">Features</p>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                 {project.features.map((feature) => (
@@ -107,6 +91,21 @@ export default async function ProjectPage({
               </ul>
             </div>
           ) : null}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {gallery.map((src, index) => (
+              <div
+                key={`${src}-${index}`}
+                className={`mx-auto overflow-hidden rounded-2xl border-2 w-full bg-white ${index === 0 ? "sm:col-span-2" : ""}`}
+              >
+                <img
+                  src={src}
+                  alt={`${project.title} preview ${index + 1}`}
+                  className="h-auto w-full object-contain border border-border"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
