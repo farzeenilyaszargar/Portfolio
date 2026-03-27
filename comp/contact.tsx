@@ -33,7 +33,7 @@ export default function Contact() {
                 </h1>
 
                 <div className="mt-8 grid gap-4 md:grid-cols-2">
-                    <div className="flex items-center justify-between rounded-2xl border bg-neutral-50 p-4">
+                    <div className="flex items-center justify-between rounded-2xl border p-4">
                         <div className="flex items-center gap-3">
                             <span className="flex h-10 w-10 items-center justify-center rounded-full border bg-white">
                                 <svg
@@ -83,7 +83,7 @@ export default function Contact() {
                         </button>
                     </div>
 
-                    <div className="flex items-center justify-between rounded-2xl border bg-neutral-50 p-4">
+                    <div className="flex items-center justify-between rounded-2xl border  p-4">
                         <div className="flex items-center gap-3">
                             <span className="flex h-10 w-10 items-center justify-center rounded-full border bg-white">
                                 <svg

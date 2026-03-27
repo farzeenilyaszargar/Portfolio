@@ -9,8 +9,8 @@ const instrumentSerif = Instrument_Serif({
 export default function Footer()
 {
     return (
-        <div className="w-screen flex flex-col items-center justify-top border-t border-border mb-0  mt-5 h-14 overflow-hidden ">
-            <h1 className={`font-black text-8xl ${instrumentSerif.className} text-stroke`}>FARZEEN</h1>
+        <div className="w-screen flex flex-col items-center justify-top border-t overflow-hidden mb-0  mt-5 h-18  pt-5 ">
+            <h1 className={`font-black text-8xl ${instrumentSerif.className} text-stroke-1 `}>FARZEEN ILYAS ZARGAR</h1>
         </div>
     );
 }

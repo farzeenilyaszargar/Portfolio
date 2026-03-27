@@ -12,6 +12,16 @@ export interface ProjProps {
 }
 
 export const projects: ProjProps[] = [
+     {
+        id: 'nap',
+        title: "Nap",
+        description: "an agent orchestration platform for coordinating tools, tasks, and multi-step workflows.",
+        linkWeb: "https://nap-code.com/",
+        img: "/imgs/nap.png",
+        skills: ["TypeScript", "APIs", "Infrastructure"],
+        webAvail:true,
+        fullInfo: "Nap is an orchestration layer for tool-using agents, designed to break down work into reliable, repeatable steps. It manages task routing, tool calls, and state so complex workflows remain observable and controllable. The platform is built to scale with new tools, models, and execution environments.",
+    },
     
     {
         id: 'race',
@@ -46,6 +56,7 @@ export const projects: ProjProps[] = [
         fullInfo: "LightPost is an AI-assisted news feed that curates stories and highlights key takeaways. It focuses on reducing noise by summarizing long articles and grouping related topics so readers can scan quickly. The interface keeps attention on content, with a lightweight, responsive UI for daily reading.",
 
     },
+    
     {
         id: 'gameoflife',
 
@@ -57,6 +68,15 @@ export const projects: ProjProps[] = [
         webAvail:true,
         fullInfo: "A visual implementation of Conway's Game of Life with emphasis on performance and clarity. It supports configurable grid sizes, simulation speed control, and interactive patterns. The project highlights how simple rules can generate complex emergent behavior.",
 
+    },
+    {
+        id: 'surfers',
+        title: "Surfers",
+        description: "an AI-first site builder that turns prompts into live, editable pages with quick publishing.",
+        img: "/imgs/surfers.png",
+        skills: ["AI", "React", "Node.js"],
+        webAvail:false,
+        fullInfo: "Surfers is a prompt-to-website builder that generates a clean starting point and keeps everything editable. It balances fast generation with sensible defaults for typography, layout, and sections, then provides a simple editor for refining content and styles. The focus is on speed to first publish and making changes without friction.",
     },
 
     {
@@ -93,6 +113,18 @@ export const projects: ProjProps[] = [
         fullInfo:"This placeholder brief outlines a Rust music player project intended to be fast, safe, and pleasant to use. The application targets desktop platforms and optionally a terminal interface, demonstrating modern async design and careful resource management. Core responsibilities are decoding audio, managing a media library, scheduling playback, and presenting a responsive UI. Audio playback will use rodio or cpal for output, wrapped in a small trait to allow swapping backends. Supported formats initially include MP3, FLAC, WAV, OGG, and AAC via symphonia. Files are discovered by a library indexer that walks directories with ignore rules, extracts tags with lofty, computes content hashes for deduplication, and stores metadata in SQLite through sqlx. Indexing runs on Tokio tasks to avoid blocking the UI. The queue and playlist engine provide shuffle, repeat, crossfade, gapless playback, replay gain, and a lightweight ten band equalizer. Smart playlists evaluate simple rules like genre, year, or play count. Streaming HTTP, HLS, and radio sources are buffered with backpressure and graceful reconnects. A small cache reduces bandwidth and supports offline listening for recently played tracks. Two interfaces are planned. A TUI built with ratatui and crossterm offers keyboard driven control in the terminal. A desktop shell using Tauri provides native windowing, tray controls, and media keys. Both share the same core crate to maintain a single source of truth. Telemetry uses tracing for structured logs and optional OpenTelemetry for metrics. Tests cover decoders, queue invariants, and migration safety; property tests with proptest strengthen correctness. Security considerations include sandboxing external artwork fetches, validating playlist URLs, and handling untrusted tags safely. Documentation will include quickstart examples, configuration guides, and an architecture diagram. The roadmap targets a minimal viable player, then plugins for visualizers, scrobbling, and DSP effects. Contributions are welcome and encouraged. Issue templates and code style guidelines ship included. The long-term goal is a polished, low-latency player that feels instant even with large libraries.",
 
     },
+
+    {
+        id: 'superflights',
+        title: "Superflights",
+        description: "a full-stack travel booking platform with fast search, itinerary management, and checkout flows.",
+        linkWeb: "https://www.superflights.co.in/",
+        img: "/imgs/superlights.png",
+        skills: ["Next.js", "TypeScript", "Payments"],
+        webAvail:true,
+        fullInfo: "Superflights is an OTA-style travel platform that focuses on speed, pricing clarity, and a clean booking experience. I built the core web product with a search flow that surfaces flights and fares quickly, then guides users through flexible filters, itinerary building, and checkout. The system emphasizes reliable pricing, responsive UX, and scalable APIs so the product remains fast even under heavy usage.",
+    },
+    
     {
         id: 'security-system',
 
@@ -122,49 +154,10 @@ export const projects: ProjProps[] = [
     
     
 
-    {
-        id: 'img-ascii',
-        title: "Convert Image to ASCII Characters",
-        description: "just upload files to convert Image to ASCII characters with shadings!",
-        img: "/imgs/ascii.gif",
-        skills: ["HTML", "CSS", "JavaScript", "Python"],
-        webAvail:true,
-        linkWeb: "",
-        fullInfo: "A simple web app that transforms images into ASCII art with shading and contrast control. It supports quick uploads and renders the output in a readable monospace grid. The project focuses on balancing fidelity with performance so results appear instantly.",
-
-        
-    },
-
-    {
-        id: 'superflights',
-        title: "Superflights",
-        description: "a full-stack travel booking platform with fast search, itinerary management, and checkout flows.",
-        linkWeb: "https://www.superflights.co.in/",
-        img: "/imgs/superlights.png",
-        skills: ["Next.js", "TypeScript", "Payments"],
-        webAvail:true,
-        fullInfo: "Superflights is an OTA-style travel platform that focuses on speed, pricing clarity, and a clean booking experience. I built the core web product with a search flow that surfaces flights and fares quickly, then guides users through flexible filters, itinerary building, and checkout. The system emphasizes reliable pricing, responsive UX, and scalable APIs so the product remains fast even under heavy usage.",
-    },
-    {
-        id: 'surfers',
-        title: "Surfers",
-        description: "an AI-first site builder that turns prompts into live, editable pages with quick publishing.",
-        img: "/imgs/surfers.png",
-        skills: ["AI", "React", "Node.js"],
-        webAvail:false,
-        fullInfo: "Surfers is a prompt-to-website builder that generates a clean starting point and keeps everything editable. It balances fast generation with sensible defaults for typography, layout, and sections, then provides a simple editor for refining content and styles. The focus is on speed to first publish and making changes without friction.",
-    },
     
-    {
-        id: 'nap',
-        title: "Nap",
-        description: "an agent orchestration platform for coordinating tools, tasks, and multi-step workflows.",
-        linkWeb: "https://nap-code.com/",
-        img: "/imgs/nap.png",
-        skills: ["TypeScript", "APIs", "Infrastructure"],
-        webAvail:true,
-        fullInfo: "Nap is an orchestration layer for tool-using agents, designed to break down work into reliable, repeatable steps. It manages task routing, tool calls, and state so complex workflows remain observable and controllable. The platform is built to scale with new tools, models, and execution environments.",
-    },
+
+    
+   
 
     
 ]
