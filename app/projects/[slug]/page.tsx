@@ -90,12 +90,12 @@ export default async function ProjectPage({
             {gallery.map((src, index) => (
               <div
                 key={`${src}-${index}`}
-                className={`overflow-hidden rounded-2xl ${index === 0 ? "sm:col-span-2" : ""}`}
+                className={`mx-auto w-full max-w-[520px] overflow-hidden rounded-2xl border bg-white p-1 ${index === 0 ? "sm:col-span-2" : ""}`}
               >
                 <img
                   src={src}
                   alt={`${project.title} preview ${index + 1}`}
-                  className="h-auto w-full"
+                  className="h-auto w-full max-h-[320px] object-contain"
                   loading="lazy"
                 />
               </div>
