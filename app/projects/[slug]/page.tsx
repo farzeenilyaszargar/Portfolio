@@ -67,13 +67,6 @@ export default async function ProjectPage({
               ) : null}
             </div>
 
-            <div className="rounded-2xl border bg-white p-5">
-              <p className="text-sm uppercase tracking-widest text-gray-500">Overview</p>
-              <p className="mt-3 text-base leading-relaxed text-gray-800">
-                {project.fullInfo ?? project.description}
-              </p>
-            </div>
-
             {project.features?.length ? (
               <div>
                 <p className="text-sm uppercase tracking-widest text-gray-500">Features</p>
@@ -100,6 +93,13 @@ export default async function ProjectPage({
                 />
               </div>
             ))}
+          </div>
+
+          <div>
+            <p className="text-sm uppercase tracking-widest text-gray-500">Overview</p>
+            <p className="mt-3 text-base leading-relaxed text-gray-800">
+              {project.fullInfo ?? project.description}
+            </p>
           </div>
         </div>
       </div>
