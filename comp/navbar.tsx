@@ -33,8 +33,8 @@ export default function Navbar() {
 
     return (
         <div
-            className={`w-screen px-20 flex justify-between py-2 items-center  bg-blur backdrop-blur-sm border-b border-border sticky top-0 z-50 ${
-                isDark ? "bg-black/70 text-white border-white/10" : "bg-white/70"
+            className={`w-screen px-20 flex justify-between py-2 items-center  bg-blur backdrop-blur-sm border-b sticky top-0 z-50 ${
+                isDark ? "bg-black/70 text-white border-neutral-700" : "bg-white/70"
             }`}
         >
             <Link href="/" className="">
