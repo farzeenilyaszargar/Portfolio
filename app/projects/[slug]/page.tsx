@@ -40,8 +40,8 @@ export default async function ProjectPage({
         <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[1fr,1.1fr]">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col items-center text-center">
-              <h1 className={`text-4xl font-bold ${instrumentSerif.className}`}>{project.title}</h1>
-              <p className="mt-3 text-lg text-gray-600">{project.description}</p>
+              <h1 className={`text-5xl text-stroke-1 ${instrumentSerif.className}`}>{project.title}</h1>
+              <p className="mt-3 text-lg text-gray-600 dark:text-gray-300">{project.description}</p>
               {project.skills?.length ? (
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
                   {project.skills.map((skill) => (
@@ -69,8 +69,8 @@ export default async function ProjectPage({
 
             {project.features?.length ? (
               <div>
-                <p className="text-sm uppercase tracking-widest text-gray-500">Features</p>
-                <ul className="mt-3 list-disc pl-5 text-sm text-gray-700">
+                <p className="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400">Features</p>
+                <ul className="mt-3 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300">
                   {project.features.map((feature) => (
                     <li key={feature}>{feature}</li>
                   ))}
@@ -80,7 +80,7 @@ export default async function ProjectPage({
           </div>
 
           <div>
-            <p className="text-base leading-relaxed text-gray-800">
+            <p className="text-base leading-relaxed text-gray-800 dark:text-gray-300">
               {project.fullInfo ?? project.description}
             </p>
           </div>
@@ -89,12 +89,12 @@ export default async function ProjectPage({
             {gallery.map((src, index) => (
               <div
                 key={`${src}-${index}`}
-                className={`mx-auto w-full max-w-[520px] overflow-hidden rounded-2xl border bg-white p-1 ${index === 0 ? "sm:col-span-2" : ""}`}
+                className={`mx-auto overflow-hidden rounded-2xl border-2 w-1/2 bg-white  ${index === 0 ? "sm:col-span-2" : ""}`}
               >
                 <img
                   src={src}
                   alt={`${project.title} preview ${index + 1}`}
-                  className="h-auto w-full max-h-[320px] object-contain"
+                  className="h-auto w-full object-contain"
                   loading="lazy"
                 />
               </div>
