@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { projects } from "@/data/projects";
 
-const rawBaseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
+const rawBaseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://farzeenilyaszargar.online";
 const baseUrl = rawBaseUrl.replace(/\/+$/, "");
 
 export default function sitemap(): MetadataRoute.Sitemap {
