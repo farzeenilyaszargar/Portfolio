@@ -42,10 +42,7 @@ export default async function ProjectPage({
           <div className="flex flex-col gap-6">
             <div className="flex flex-col items-center text-center">
               <h1 className={`text-5xl text-stroke-1 ${instrumentSerif.className}`}>{project.title}</h1>
-              <p
-                className="mt-3 text-lg !text-black dark:!text-gray-300"
-                style={{ color: "#000000" }}
-              >
+              <p className="mt-3 text-lg text-red-600 dark:text-red-400">
                 {project.description}
               </p>
               {project.skills?.length ? (
@@ -86,10 +83,7 @@ export default async function ProjectPage({
           </div>
 
           <div>
-            <p
-              className="text-base leading-relaxed !text-black dark:!text-gray-300"
-              style={{ color: "#000000" }}
-            >
+            <p className="text-base leading-relaxed text-red-600 dark:text-red-400">
               {project.fullInfo ?? project.description}
             </p>
           </div>
