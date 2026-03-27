@@ -87,12 +87,6 @@ export default async function ProjectPage({
             ) : null}
           </div>
 
-          <div>
-            <p className="text-base leading-relaxed project-secondary">
-              {project.fullInfo ?? project.description}
-            </p>
-          </div>
-
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {gallery.map((src, index) => (
               <div
@@ -107,6 +101,12 @@ export default async function ProjectPage({
                 />
               </div>
             ))}
+          </div>
+
+          <div>
+            <p className="text-base leading-relaxed project-secondary">
+              {project.fullInfo ?? project.description}
+            </p>
           </div>
         </div>
       </div>
