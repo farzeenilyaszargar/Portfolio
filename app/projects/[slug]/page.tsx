@@ -41,17 +41,6 @@ export default async function ProjectPage({
           <div className="flex flex-col gap-6">
             <div className="flex flex-col items-center text-center">
               <h1 className={`text-4xl font-bold ${instrumentSerif.className}`}>{project.title}</h1>
-              {project.linkWeb ? (
-                <Link
-                  href={project.linkWeb}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="theme-invert mt-4 inline-flex items-center justify-center gap-2 rounded-full border bg-black px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
-                >
-                  <Image src="/icons/link.png" alt="External Link" width={16} height={16} className="h-4 w-4 invert" />
-                  Visit Project
-                </Link>
-              ) : null}
               <p className="mt-3 text-lg text-gray-600">{project.description}</p>
               {project.skills?.length ? (
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
@@ -64,6 +53,17 @@ export default async function ProjectPage({
                     </span>
                   ))}
                 </div>
+              ) : null}
+              {project.linkWeb ? (
+                <Link
+                  href={project.linkWeb}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="theme-invert mt-4 inline-flex items-center justify-center gap-2 rounded-full border bg-black px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+                >
+                  <Image src="/icons/link.png" alt="External Link" width={16} height={16} className="h-4 w-4 invert" />
+                  Visit Project
+                </Link>
               ) : null}
             </div>
 
