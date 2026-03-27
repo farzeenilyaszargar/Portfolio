@@ -72,12 +72,12 @@ export default async function ProjectPage({
 
             {project.features?.length ? (
               <div>
-                <p className="text-sm uppercase tracking-widest text-black dark:text-gray-400">Features</p>
+                <p className="text-sm uppercase tracking-widest text-black">Features</p>
                 <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                   {project.features.map((feature) => (
                     <li
                       key={feature}
-                      className="rounded-xl border bg-white/70 px-4 py-3 text-sm font-medium text-black shadow-sm dark:bg-white/5 dark:text-gray-200"
+                      className="rounded-xl border bg-black px-4 py-3 text-sm font-medium text-white shadow-sm"
                     >
                       {feature}
                     </li>
