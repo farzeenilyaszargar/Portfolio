@@ -5,7 +5,7 @@ html.dark {
 }
 
 html.dark body {
-  background-color: #09090b;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -16,6 +16,19 @@ html.dark .border-l,
 html.dark .border-r,
 html.dark .border-border {
   border-color: rgba(148, 148, 148, 0.6);
+}
+
+html.dark .theme-invert {
+  filter: invert(1);
+}
+html.dark .theme-inverty {
+  filter: invert(1);
+}html.dark .theme-inverty:hover {
+  filter: invert(1);
+}
+
+html.dark .theme-invert:hover {
+  filter: invert(0);
 }
 
 .text-stroke {

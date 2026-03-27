@@ -61,7 +61,7 @@ export default function Experience() {
                             <p className="text-sm text-gray-600">{e.desc}</p>
                         </div>
                         {e.link ?(
-                            <Link href={e.link} target="_blank" className="flex flex-row items-center gap-1 border hover:invert px-3 py-0.5 mx-5 bg-white text-black rounded-full">
+                            <Link href={e.link} target="_blank" className="theme-invert flex flex-row items-center gap-1 border hover:invert px-3 py-0.5 mx-5 bg-white text-black rounded-full">
                                 <Image src="/icons/link.png" alt="External Link" width={16} height={16} className="w-3 h-3 " />
                                 <p className="pr-2">Visit</p>
                             </Link>
