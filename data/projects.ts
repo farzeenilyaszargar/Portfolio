@@ -8,7 +8,6 @@ export interface ProjProps {
     skills: string[];
     fullInfo?:string;
     features?: string[];
-    moreImgs?: string[];
 }
 
 export const projects: ProjProps[] = [
@@ -93,11 +92,7 @@ export const projects: ProjProps[] = [
             "Detailed reports on time usage",
             "User-friendly interface",
             "Compatibility with major browsers"],
-        moreImgs: [
-                "/imgs/ext2.png",
-                "/imgs/ext3.png"
-
-            ]
+       
 
     },
 
@@ -152,12 +147,6 @@ export const projects: ProjProps[] = [
     },
 
     
-    
-
-    
-
-    
-   
 
     
 ]

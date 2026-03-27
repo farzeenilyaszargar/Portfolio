@@ -19,9 +19,9 @@ export default function Hero()
                 <p className="items-center justify-center"><Image src="/icons/location-pin.png" alt="Location" width={20} height={20} className="inline mr-2 pb-1"/>Delhi, India</p>
             </div>
             <div className="flex flex-row items-center gap-0 lg:gap-4 -ml-3 -mt-6 lg:mt-0 lg:ml-0">
-                <Link href="https://x.com/farzeenilyas" className=" p-2 rounded-full hover:scale-110"><Image src="/icons/twitter.svg" alt="Twitter" width={20} height={20} className="sm:w-10 w-8 theme-invert"/></Link>
-                <Link href="https://www.linkedin.com/in/farzeenilyaszargar/" className=" p-2 rounded-full hover:scale-110"><Image src="/icons/linkedin.svg" alt="LinkedIn" width={20} height={20} className="sm:w-12 w-10 theme-invert"/></Link>
-                <Link href="https://github.com/farzeenilyaszargar" className=" p-2 rounded-full hover:scale-110"><Image src="/icons/github.svg" alt="GitHub" width={20} height={20} className="sm:w-12 w-10 theme-invert"/></Link>
+                <Link href="https://x.com/farzeenilyas" className=" p-2 rounded-full hover:scale-110"><Image src="/icons/twitter.svg" alt="Twitter" width={20} height={20} className="sm:w-10 w-8 theme-inverty"/></Link>
+                <Link href="https://www.linkedin.com/in/farzeenilyaszargar/" className=" p-2 rounded-full hover:scale-110"><Image src="/icons/linkedin.svg" alt="LinkedIn" width={20} height={20} className="sm:w-12 w-9 theme-inverty"/></Link>
+                <Link href="https://github.com/farzeenilyaszargar" className=" p-2 rounded-full hover:scale-110"><Image src="/icons/github.svg" alt="GitHub" width={20} height={20} className="sm:w-12 w-9 theme-inverty"/></Link>
             </div>
         </div>
     );

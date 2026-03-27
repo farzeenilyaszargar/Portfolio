@@ -34,7 +34,7 @@ export default function Contact() {
                 <div className="mt-6 sm:mt-8 grid gap-4 md:grid-cols-2">
                     <div className="flex items-center justify-between rounded-2xl border p-3 sm:p-4">
                         <div className="flex items-center gap-3">
-                            <span className="hidden sm:flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white">
+                            <span className="hidden sm:flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border">
                                 <svg
                                     aria-hidden
                                     viewBox="0 0 24 24"
@@ -62,7 +62,7 @@ export default function Contact() {
                         <button
                             type="button"
                             onClick={() => copyText("farzeenilyaszargar@gmail.com")}
-                            className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white transition hover:scale-[1.03]"
+                            className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border transition hover:scale-[1.03]"
                             aria-label="Copy email"
                             title="Copy email"
                         >
@@ -84,7 +84,7 @@ export default function Contact() {
 
                     <div className="flex items-center justify-between rounded-2xl border p-3 sm:p-4">
                         <div className="flex items-center gap-3">
-                            <span className="hidden sm:flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white">
+                            <span className="hidden sm:flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border ">
                                 <svg
                                     aria-hidden
                                     viewBox="0 0 24 24"
@@ -108,7 +108,7 @@ export default function Contact() {
                         <button
                             type="button"
                             onClick={() => copyText("+91 98189 60083")}
-                            className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border bg-white transition hover:scale-[1.03]"
+                            className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border transition hover:scale-[1.03]"
                             aria-label="Copy phone"
                             title="Copy phone"
                         >

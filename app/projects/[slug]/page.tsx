@@ -33,7 +33,8 @@ export default async function ProjectPage({
     <div className="min-h-screen w-full">
       <Navbar />
       <div className="px-4 sm:px-6 lg:px-20 py-16">
-        <Link href="/" className="text-sm uppercase tracking-widest hover:underline">
+        <Link href="/" className="text-sm uppercase tracking-widest hover:border-b pb-1 transition inline-flex items-center ">
+          <Image src="/icons/left.png" alt="Back" width={16} height={16} className="inline h-4 w-4 invert mr-1" />
           Back
         </Link>
 
