@@ -27,7 +27,7 @@ export default function Contact() {
 
     return (
         <section className="w-screen px-20 py-16">
-            <div className=" bg-white">
+            <div className="rounded-3xl border bg-white p-10 text-black">
                 <h1 className={`text-4xl font-bold text-stroke-1 ${instrumentSerif.className}`}>
                     Contact Me
                 </h1>
