@@ -21,7 +21,7 @@ export default async function ProjectPage({
   const gallery = [project.img, ...(project.moreImgs ?? [])];
 
   return (
-    <div className="min-h-screen w-screen px-20 py-16">
+    <div className="min-h-screen w-full px-4 sm:px-6 lg:px-20 py-16">
       <Link href="/" className="text-sm uppercase tracking-widest hover:underline">
         Back
       </Link>

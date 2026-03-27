@@ -49,11 +49,11 @@ const exp: ExpProps[] = [
 
 export default function Experience() {
     return (
-        <div className="w-screen flex flex-col items-start px-20">
+        <div className="w-full flex flex-col items-start px-4 sm:px-6 lg:px-20">
                 <h1 className={`text-3xl font-bold mb-5 text-stroke-1 ${instrumentSerif.className}`}>Experience</h1>
             {
                 exp.map((e, i) => (
-                    <div className={`flex flex-row items-center border p-2 px-5 rounded-xl mb-5 w-full`} key={i}>
+                    <div className={`flex flex-col sm:flex-row sm:items-center gap-4 border p-3 sm:px-5 rounded-xl mb-5 w-full`} key={i}>
                         <img src={e.logo} alt={e.name} className="w-10 h-10 mr-5 rounded-full" />
                         <div className="flex flex-col w-full">
                             <h2 className={`text-lg font-bold  `}><span className={`text-stroke-1 ${instrumentSerif.className}`}>{e.name}</span> <span className="text-xs text-gray-500 font-normal">({e.time})</span></h2>
@@ -61,7 +61,7 @@ export default function Experience() {
                             <p className="text-sm text-gray-600">{e.desc}</p>
                         </div>
                         {e.link ?(
-                            <Link href={e.link} target="_blank" className="theme-invert flex flex-row items-center gap-1 border hover:invert px-3 py-0.5 mx-5 bg-white text-black rounded-full">
+                            <Link href={e.link} target="_blank" className="theme-invert flex flex-row items-center gap-1 border hover:invert px-3 py-0.5 sm:ml-auto bg-white text-black rounded-full">
                                 <Image src="/icons/link.png" alt="External Link" width={16} height={16} className="w-3 h-3 " />
                                 <p className="pr-2">Visit</p>
                             </Link>

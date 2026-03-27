@@ -10,7 +10,7 @@ const instrumentSerif = Instrument_Serif({
 
 export default function Projects() {
     return (
-        <div className="w-screen px-20 my-10">
+        <div className="w-full px-4 sm:px-6 lg:px-20 my-10">
             <h1 className={`text-3xl font-bold mb-6 text-stroke-1 ${instrumentSerif.className}`}>
                 Projects
             </h1>
