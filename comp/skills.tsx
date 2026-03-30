@@ -69,7 +69,7 @@ export default function Skills()
 
 
     return (
-        <div className="w-full flex flex-col items-left px-4 sm:px-6 lg:px-20 ">
+        <div className="w-full flex flex-col items-left px-4 sm:px-6 lg:px-20 mt-8">
             <h1 className={`text-2xl sm:text-3xl font-bold mb-4 text-stroke-1 ${instrumentSerif.className}`}>Skills</h1>
             <div className=" mt-3 flex flex-row flex-wrap justify-start overflow-hidden  ">
             {

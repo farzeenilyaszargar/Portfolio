@@ -49,7 +49,7 @@ const exp: ExpProps[] = [
 
 export default function Experience() {
     return (
-        <div className="w-full flex flex-col items-start px-4 sm:px-6 lg:px-20">
+        <div className="w-full flex flex-col items-start px-4 sm:px-6 lg:px-20 mt-8">
                 <h1 className={`text-2xl sm:text-3xl font-bold mb-5 text-stroke-1 ${instrumentSerif.className}`}>Experience</h1>
             {
                 exp.map((e, i) => (
