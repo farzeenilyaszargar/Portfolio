@@ -62,29 +62,45 @@ html.dark .project-secondary {
   color: #d1d5db !important;
 }
 
-.theme-wipe {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  pointer-events: none;
-  transform-origin: top;
-  transform: scaleY(0);
-  opacity: 1;
-  transition: transform 520ms ease, opacity 220ms ease;
+html {
+  view-transition-name: root;
 }
 
-.theme-wipe--dark {
-  background-color: #000000;
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 520ms;
+  animation-timing-function: ease-in-out;
 }
 
-.theme-wipe--light {
-  background-color: #ffffff;
+::view-transition-new(root) {
+  animation-name: theme-wipe-in;
 }
 
-.theme-wipe.is-active {
-  transform: scaleY(1);
+::view-transition-old(root) {
+  animation-name: theme-wipe-out;
 }
 
-.theme-wipe.is-fading {
-  opacity: 0;
+@keyframes theme-wipe-in {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes theme-wipe-out {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(100% 0 0 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
 }

@@ -14,10 +14,6 @@ const instrumentSerif = Instrument_Serif({
 export default function Navbar() {
     const [isDark, setIsDark] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
-    const [wipeVisible, setWipeVisible] = useState(false);
-    const [wipeActive, setWipeActive] = useState(false);
-    const [wipeFading, setWipeFading] = useState(false);
-    const [wipeTone, setWipeTone] = useState<"dark" | "light">("dark");
 
     useEffect(() => {
         const stored = localStorage.getItem("theme");
@@ -32,47 +28,33 @@ export default function Navbar() {
     const toggleTheme = () => {
         if (isAnimating) return;
         const next = !isDark;
-        const tone: "dark" | "light" = next ? "dark" : "light";
         setIsAnimating(true);
-        setWipeTone(tone);
-        setWipeFading(false);
-        setWipeVisible(true);
-        requestAnimationFrame(() => {
-            setWipeActive(true);
-        });
 
-        const wipeDuration = 520;
-        const fadeDuration = 220;
-
-        window.setTimeout(() => {
+        const applyTheme = () => {
             document.documentElement.classList.toggle("dark", next);
             localStorage.setItem("theme", next ? "dark" : "light");
             setIsDark(next);
-            setWipeFading(true);
+        };
 
-            window.setTimeout(() => {
-                setWipeActive(false);
-                setWipeVisible(false);
-                setWipeFading(false);
-                setIsAnimating(false);
-            }, fadeDuration);
-        }, wipeDuration);
+        const transitionDoc = document as Document & {
+            startViewTransition?: (callback: () => void) => { finished: Promise<void> };
+        };
+
+        if (transitionDoc.startViewTransition) {
+            const transition = transitionDoc.startViewTransition(applyTheme);
+            transition.finished.finally(() => setIsAnimating(false));
+        } else {
+            applyTheme();
+            setIsAnimating(false);
+        }
     };
 
     return (
-        <>
-            {wipeVisible ? (
-                <div
-                    className={`theme-wipe ${wipeTone === "dark" ? "theme-wipe--dark" : "theme-wipe--light"}${
-                        wipeActive ? " is-active" : ""
-                    }${wipeFading ? " is-fading" : ""}`}
-                />
-            ) : null}
-            <div
-                className={`w-full px-4 sm:px-6 lg:px-20 flex justify-between py-2 items-center bg-blur backdrop-blur-sm border-b sticky top-0 z-50 ${
-                    isDark ? "bg-black/80 text-white border-neutral-700" : "bg-white/70"
-                }`}
-            >
+        <div
+            className={`w-full px-4 sm:px-6 lg:px-20 flex justify-between py-2 items-center bg-blur backdrop-blur-sm border-b sticky top-0 z-50 ${
+                isDark ? "bg-black/80 text-white border-neutral-700" : "bg-white/70"
+            }`}
+        >
             <Link href="/" className="">
                 <h1 className={`${instrumentSerif.className} text-2xl sm:text-3xl font-bold italic`}>
                     <span className="sm:hidden">Farzeen</span>
@@ -108,7 +90,6 @@ export default function Navbar() {
                     <p className={`pr-1 ${instrumentSerif.className} text-lg sm:text-xl`}>Resume</p>
                 </Link>
             </div>
-            </div>
-        </>
+        </div>
     );
 }
