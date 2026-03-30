@@ -11,7 +11,7 @@ const instrumentSerif = Instrument_Serif({
 export default function Hero()
 {
     return (
-        <div className="w-full flex flex-col gap-8 lg:flex-row lg:justify-between py-12 lg:py-20 px-4 sm:px-6 lg:px-20">
+        <div className="w-full flex flex-col gap-8 lg:flex-row lg:justify-between py-12 lg:py-20 px-4 sm:px-6 lg:px-40">
             <div className="">
                 <h2 className="text-2xl">I am a</h2>
                 <h2 className={`text-4xl sm:text-5xl lg:text-6xl font-bold sm:text-stroke text-stroke-1 ${instrumentSerif.className}`}>Software Developer</h2>

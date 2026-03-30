@@ -26,7 +26,7 @@ export default function Contact() {
     };
 
     return (
-        <section className="w-full px-4 sm:px-6 lg:px-20 py-20">
+        <section className="w-full px-4 sm:px-6 lg:px-40 py-20">
                 <h1 className={`text-3xl sm:text-4xl font-bold text-stroke-1 ${instrumentSerif.className}`}>
                     Contact Me
                 </h1>
