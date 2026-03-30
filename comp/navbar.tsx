@@ -13,6 +13,11 @@ const instrumentSerif = Instrument_Serif({
 
 export default function Navbar() {
     const [isDark, setIsDark] = useState(false);
+    const [isAnimating, setIsAnimating] = useState(false);
+    const [wipeVisible, setWipeVisible] = useState(false);
+    const [wipeActive, setWipeActive] = useState(false);
+    const [wipeFading, setWipeFading] = useState(false);
+    const [wipeTone, setWipeTone] = useState<"dark" | "light">("dark");
 
     useEffect(() => {
         const stored = localStorage.getItem("theme");
@@ -25,20 +30,49 @@ export default function Navbar() {
     }, []);
 
     const toggleTheme = () => {
-        setIsDark((prev) => {
-            const next = !prev;
+        if (isAnimating) return;
+        const next = !isDark;
+        const tone: "dark" | "light" = next ? "dark" : "light";
+        setIsAnimating(true);
+        setWipeTone(tone);
+        setWipeFading(false);
+        setWipeVisible(true);
+        requestAnimationFrame(() => {
+            setWipeActive(true);
+        });
+
+        const wipeDuration = 520;
+        const fadeDuration = 220;
+
+        window.setTimeout(() => {
             document.documentElement.classList.toggle("dark", next);
             localStorage.setItem("theme", next ? "dark" : "light");
-            return next;
-        });
+            setIsDark(next);
+            setWipeFading(true);
+
+            window.setTimeout(() => {
+                setWipeActive(false);
+                setWipeVisible(false);
+                setWipeFading(false);
+                setIsAnimating(false);
+            }, fadeDuration);
+        }, wipeDuration);
     };
 
     return (
-        <div
-            className={`w-full px-4 sm:px-6 lg:px-20 flex justify-between py-2 items-center bg-blur backdrop-blur-sm border-b sticky top-0 z-50 ${
-                isDark ? "bg-black/80 text-white border-neutral-700" : "bg-white/70"
-            }`}
-        >
+        <>
+            {wipeVisible ? (
+                <div
+                    className={`theme-wipe ${wipeTone === "dark" ? "theme-wipe--dark" : "theme-wipe--light"}${
+                        wipeActive ? " is-active" : ""
+                    }${wipeFading ? " is-fading" : ""}`}
+                />
+            ) : null}
+            <div
+                className={`w-full px-4 sm:px-6 lg:px-20 flex justify-between py-2 items-center bg-blur backdrop-blur-sm border-b sticky top-0 z-50 ${
+                    isDark ? "bg-black/80 text-white border-neutral-700" : "bg-white/70"
+                }`}
+            >
             <Link href="/" className="">
                 <h1 className={`${instrumentSerif.className} text-2xl sm:text-3xl font-bold italic`}>
                     <span className="sm:hidden">Farzeen</span>
@@ -49,6 +83,7 @@ export default function Navbar() {
                 <button
                     type="button"
                     onClick={toggleTheme}
+                    disabled={isAnimating}
                     className={`flex h-10 w-10 items-center justify-center rounded-full transition hover:scale-[1.03] ${
                         isDark ? "invert" : ""
                     }`}
@@ -73,6 +108,7 @@ export default function Navbar() {
                     <p className={`pr-1 ${instrumentSerif.className} text-lg sm:text-xl`}>Resume</p>
                 </Link>
             </div>
-        </div>
+            </div>
+        </>
     );
 }

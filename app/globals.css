@@ -61,3 +61,30 @@ html.dark .text-stroke-1 {
 html.dark .project-secondary {
   color: #d1d5db !important;
 }
+
+.theme-wipe {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 1;
+  transition: transform 520ms ease, opacity 220ms ease;
+}
+
+.theme-wipe--dark {
+  background-color: #000000;
+}
+
+.theme-wipe--light {
+  background-color: #ffffff;
+}
+
+.theme-wipe.is-active {
+  transform: scaleY(1);
+}
+
+.theme-wipe.is-fading {
+  opacity: 0;
+}
